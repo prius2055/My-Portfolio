@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Crete Round", "Poppins", "Roboto", sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 375px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #3c3a39;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  align-items: center;
+}
+
+header h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+main {
+  position: relative;
+  background-color: #1c1a19;
+  padding: 120px 24px 120px 24px;
+}
+
+.hero-section h1 {
+  font-family: "Crete Round", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  text-align: left;
+  color: #ff6b00;
+  margin-bottom: 12px;
+}
+
+.hero-section h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 12px;
+}
+
+.hero-section p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.hero-section-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  padding-left: 0;
+  width: 53%;
+}
+
+.hero-section-icons img {
+  margin-right: 21px;
+}
+
+.hero-image {
+  position: absolute;
+  right: 0;
+  top: 317px;
+  bottom: 0.1%;
+}
