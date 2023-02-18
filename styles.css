@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Crete Round", "Poppins", "Roboto", sans-serif;
+  font-family: "Crete Round", "Poppins", "Roboto", "inter", sans-serif;
   color: #fff;
 }
 
@@ -33,12 +33,12 @@ header a {
   text-decoration: none;
 }
 
-main {
+.hero-section {
   background-color: #1c1a19;
   padding: 120px 24px 120px 24px;
-  background-image: url("./img/hero-iamge.png");
+  background-image: url("./img/hero-image.png");
   background-repeat: no-repeat;
-  background-position: right 0% bottom -140%;
+  background-position: right 0% bottom -155%;
 }
 
 .hero-section h1 {
@@ -92,4 +92,222 @@ main {
   right: 0;
   top: 317px;
   bottom: 0.1%;
+}
+
+.works-section {
+  margin: 120px 24px 0 24px;
+}
+
+.works-section h1 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #212121;
+}
+
+.works-section h2 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #1c1a19;
+}
+
+.works-section img {
+  margin-top: 80px;
+  margin-bottom: 24px;
+}
+
+.works-section p {
+  margin-bottom: 12px;
+  color: #1c1a19;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.list {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.list-white {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.list-white li {
+  list-style: none;
+  color: #091e42;
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  margin-right: 12px;
+}
+
+.btn-orange {
+  background-color: #ff6b00;
+  padding: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 24px;
+  line-height: 24px;
+  border: none;
+  color: white;
+}
+
+.btn-orange:hover {
+  letter-spacing: 0.03em;
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.works-card {
+  display: grid;
+  row-gap: 24px;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card-details {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./img/work-card-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 85px 16px 0 16px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.work-card h2 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.work-card p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.list-grey li {
+  list-style: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.24);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  border: 1px solid #ffffff3d;
+  padding: 10px 12px;
+  margin-right: 12px;
+}
+
+.list-grey {
+  padding-bottom: 22px;
+}
+
+.btn-orange-big {
+  width: 100%;
+  margin: 0;
+}
+
+.about-section {
+  background-image: url(./img/about-section-hero.png);
+  background-repeat: no-repeat;
+  background-position: right 0% bottom 84%;
+  background-color: #1c1a19;
+  padding: 120px 24px 132px 24px;
+  margin-top: 120px;
+}
+
+.about-section h1 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.about-section p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.btn-about {
+  margin-bottom: 210px;
+}
+
+.about-horizontal {
+  background-color: white;
+  height: 1px;
+}
+
+.about-section-skills {
+  margin-top: 136px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-section-skills h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-left: 12px;
+}
+
+.skills-card li {
+  list-style: none;
+  padding-bottom: 44px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  font-family: "Inter", sans-serif;
+  line-height: 44px;
+}
+
+.skills-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.skills-header img {
+  width: 20px;
+  height: 20px;
 }
