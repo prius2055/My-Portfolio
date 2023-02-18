@@ -138,11 +138,19 @@ header a {
   margin-bottom: 12px;
 }
 
+.list-white {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
 .list-white li {
   list-style: none;
   color: #091e42;
   background-color: white;
-  font-family: "Inter" sans-serif;
+  font-family: "Inter", sans-serif;
   border: 1px solid #8993a4;
   padding: 10px 12px;
   margin-right: 12px;
@@ -158,18 +166,6 @@ header a {
   line-height: 24px;
   border: none;
   color: white;
-}
-
-.list-white item {
-  background-color: #fff;
-  color: #091e42;
-  border: 1px solid #8993a4;
-  padding: 10px 12px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
 }
 
 .works-card {
@@ -189,7 +185,7 @@ header a {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 85px 16px 0 16px;
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 0;
 }
 
@@ -199,7 +195,7 @@ header a {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .work-card p {
@@ -224,9 +220,9 @@ header a {
   margin-right: 12px;
 }
 
-.list-grey item {
+.list-grey {
   background: rgba(255, 255, 255, 0.24);
-  font-family: "Inter" sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -284,7 +280,7 @@ header a {
 }
 
 .about-section-skills h2 {
-  font-family: "Inter" sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
