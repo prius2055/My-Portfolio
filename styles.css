@@ -168,6 +168,13 @@ header a {
   color: white;
 }
 
+.btn-orange:hover {
+  letter-spacing: 0.03em;
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
 .works-card {
   display: grid;
   row-gap: 24px;
