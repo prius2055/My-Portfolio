@@ -23,18 +23,22 @@ header {
   align-items: center;
 }
 
-header h1 {
+header a {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  color: #fff;
+  text-decoration: none;
 }
 
 main {
-  position: relative;
   background-color: #1c1a19;
   padding: 120px 24px 120px 24px;
+  background-image: url("./img/hero-iamge.png");
+  background-repeat: no-repeat;
+  background-position: right 0% bottom -140%;
 }
 
 .hero-section h1 {
@@ -67,11 +71,19 @@ main {
 }
 
 .hero-section-icons {
+  background-image: url("./header-group.png");
   display: flex;
   justify-content: space-between;
   margin-left: 10px;
   padding-left: 0;
   width: 53%;
+}
+
+.hero-sections-icons ul {
+}
+
+.hero-section-icons li {
+  list-style: none;
 }
 
 .hero-section-icons img {
