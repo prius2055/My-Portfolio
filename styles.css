@@ -206,29 +206,22 @@ header a {
   line-height: 24px;
 }
 
-.list-grey {
-  padding-bottom: 22px;
-}
-
 .list-grey li {
   list-style: none;
   color: white;
-  background: rgba(255, 255, 255, 0.24);
-  font-family: "Inter" sans-serif;
-  border: 1px solid #ffffff3d;
-  padding: 10px 12px;
-  margin-right: 12px;
-}
-
-.list-grey {
   background: rgba(255, 255, 255, 0.24);
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: white;
+  border: 1px solid #ffffff3d;
   padding: 10px 12px;
+  margin-right: 12px;
+}
+
+.list-grey {
+  padding-bottom: 22px;
 }
 
 .btn-orange-big {
