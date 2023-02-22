@@ -347,3 +347,20 @@ header a {
   font-weight: 400;
   text-align: left;
 }
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color:#dfe1e6 ;
+  margin-bottom: 15%;
+}
+
+#bottom-social {
+  margin-bottom: 10%;
+}
+
+.bottom_line {
+height: 5px;
+width: 134px;
+background-color: #0d151e;
+}
