@@ -329,11 +329,12 @@ header a {
   text-align: center;
   color: #172b4d;
 }
+
 .form_element {
   display: grid;
   grid-template-columns: 100%;
-  grid-gap: 40px;
   padding-top: 70px;
+  width: 100%;
 }
 
 .form_element input {
@@ -341,26 +342,48 @@ header a {
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  padding: 2px;
+  padding: 14px 16px;
+  margin-top: 40px;
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 400;
   text-align: left;
 }
 
+.form_element textarea {
+  padding: 12px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background-color: #FBF8F7;
+  font-family: 'Inter',sans-serif;
+  color: #3C3A39;
+}
+
+.form_element textarea::placeholder{
+  color: #3C3A39;
+}
+
+.btn-form {
+  width: 50%;
+  place-self: center;
+  margin-bottom: 124px;
+  margin-top: 0;
+}
+
 .line {
-  width: 100%;
+  width: 114.7%;
   height: 2px;
-  background-color:#dfe1e6 ;
-  margin-bottom: 15%;
+  background-color: #dfe1e6;
+  margin-bottom: 6.5%;
 }
 
 #bottom-social {
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 }
 
 .bottom_line {
-height: 5px;
-width: 134px;
-background-color: #0d151e;
+  height: 5px;
+  width: 134px;
+  background-color: #0d151e;
+  margin-bottom: 2%;
 }
