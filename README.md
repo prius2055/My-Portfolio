@@ -60,6 +60,8 @@
 
 - **[A navigation bar]**
 - **[A headline section]**
+- **[A works and about me section]**
+- **[A Contact form section]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,7 +84,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-  git clone https://github.com/prius2055/Project-1.git
+  git clone https://github.com/prius2055/Portfolio-project.git
 
 ### Usage
 
@@ -98,7 +100,8 @@ npm start
 
 > The project was built in collaboration with the following persons
 
-👤 **Prius**
+👤 **Yacos(https://github.com/Yacoubou-seidou)**
+👤 **Samuel (https://github.com/yawsamcode)**
 
 - GitHub: [@githubhandle](https://github.com/prius2055)
 
@@ -109,8 +112,8 @@ npm start
 
 > The following features can be included in the project
 
-- [ ] **[A section to highlight a number of personnal projects]**
-- [ ] **[A footer section the contains a contact form]**
+- [ ] **[More styling to the UI]**
+- [ ] **[A Desktop view]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
