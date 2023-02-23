@@ -354,13 +354,13 @@ header a {
   padding: 12px;
   margin-top: 24px;
   margin-bottom: 24px;
-  background-color: #FBF8F7;
-  font-family: 'Inter',sans-serif;
-  color: #3C3A39;
+  background-color: #fbf8f7;
+  font-family: "Inter", sans-serif;
+  color: #3c3a39;
 }
 
-.form_element textarea::placeholder{
-  color: #3C3A39;
+.form_element textarea::placeholder {
+  color: #3c3a39;
 }
 
 .btn-form {
