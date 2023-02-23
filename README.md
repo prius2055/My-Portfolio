@@ -100,9 +100,9 @@ npm start
 
 > The project was built in collaboration with the following persons
 
-👤 **Prius**
-👤 **Yacos**
-👤 **Samuel**
+👤 **Prius(https://github.com/prius2055)**
+👤 **Yacos(https://github.com/Yacoubou-seidou)**
+👤 **Samuel (https://github.com/yawsamcode)**
 
 - GitHub: [@githubhandle](https://github.com/prius2055)
 
