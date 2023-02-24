@@ -338,6 +338,7 @@ header {
   padding-left: 24px;
   padding-right: 24px;
 }
+
 .form {
   display: flex;
   flex-direction: column;
@@ -413,7 +414,7 @@ header {
   margin-bottom: 2%;
 }
 
-/*DESKTOP VIEW*/
+/* DESKTOP VIEW */
 
 @media screen and (min-width: 768px) {
   nav .mobile-nav {
@@ -424,10 +425,10 @@ header {
     padding: 26px 120px;
   }
 
-  nav .desktop-nav {
-    display: flex;
-    justify-content: space-between;
+  .hero-section-icons li {
+    margin-bottom: 50%;
   }
+
   nav .desktop-nav li {
     list-style: none;
     margin-left: 32px;
@@ -463,10 +464,6 @@ header {
   .hero-section-icons {
     display: flex;
     flex-direction: column;
-  }
-
-  .hero-section-icons li {
-    margin-bottom: 50%;
   }
 
   .hero-section-greet {
@@ -770,6 +767,11 @@ header {
     margin-bottom: 0;
   }
 
+  nav .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
   #bottom-social {
     margin-bottom: 0;
   }
@@ -779,7 +781,7 @@ header {
   }
 }
 
-/*DESKTOP 2*/
+/* DESKTOP 2 */
 
 @media screen and (min-width: 1020px) {
   .hero-section {
