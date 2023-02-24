@@ -429,16 +429,6 @@ header {
     margin-bottom: 50%;
   }
 
-  nav .desktop-nav li {
-    list-style: none;
-    margin-left: 32px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
   .desktop-nav li a {
     text-decoration: none;
     color: #fff;
@@ -770,6 +760,16 @@ header {
   nav .desktop-nav {
     display: flex;
     justify-content: space-between;
+  }
+
+  nav .desktop-nav li {
+    list-style: none;
+    margin-left: 32px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   #bottom-social {
