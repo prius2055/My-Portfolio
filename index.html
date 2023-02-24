@@ -17,19 +17,30 @@
   <body>
     <div class="container">
       <header>
-        <a href="#">John Doe</a>
-        <nav><img src="/img/Union.png" alt="Hamburger button" /></nav>
+        <a href="#" class="logo">Prince Nwuke</a>
+        <nav>
+          <img src="/img/Union.png" alt="Hamburger button" class="mobile-nav" />
+          <ul class="desktop-nav">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="#"><img src="./icons/envelope.png" alt="message" /></a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <main>
         <section class="hero-section">
-          <h1>Hey There. I’m Alex</h1>
-          <h2>I'm a software developer</h2>
-          <p>
-            I can help you build a product , feature or website Look through
-            some of my work and experience! If you like what you see and have a
-            project you need coded, don’t hestiate to contact me.
-          </p>
-
+          <div class="hero-section-greet">
+            <h1>Hey There. I’m Prince</h1>
+            <h2>I'm a software developer</h2>
+            <p>
+              I can help you build a product , feature or website Look through
+              some of my work and experience! If you like what you see and have
+              a project you need coded, don’t hestiate to contact me.
+            </p>
+          </div>
           <ul class="hero-section-icons">
             <li>
               <a href="#"><img src="./icons/github.png" alt="github icon" /></a>
@@ -56,23 +67,31 @@
         </section>
 
         <section class="works-section">
-          <h1>My Recent Works</h1>
-          <img src="./img/large-image.png" alt="large works image" />
-          <h2>Multi-Post Stories</h2>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
+          <div class="works-section-header">
+            <h1>My Recent Works</h1>
+            <div class="hr"></div>
+          </div>
+          <div class="works-section-detail">
+            <img src="./img/large-image.png" alt="large works image" />
+            <div class="works-section-story">
+              <h2>Multi-Post Stories</h2>
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                standard dummy text.
+              </p>
 
-          <div class="works-section-list">
-            <ul class="list list-white">
-              <li>css</li>
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-            <button class="btn-orange">See Project</button>
+              <div class="works-section-list">
+                <ul class="list list-white">
+                  <li>css</li>
+                  <li>html</li>
+                  <li>bootstrap</li>
+                  <li>Ruby</li>
+                </ul>
+                <button class="btn-orange">See Project</button>
+              </div>
+            </div>
           </div>
 
           <div class="works-card">
@@ -175,14 +194,17 @@
         </section>
 
         <section class="about-section">
-          <h1>About me</h1>
-          <p>
-            Hello I’m a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don’t
-            hestiate to contact me.
-          </p>
-          <button class="btn-orange btn-about">Get My Resume</button>
+          <div class="about-section-header">
+            <h1>About me</h1>
+            <p>
+              Hello I’m a software developer! I can help you build a product ,
+              feature or website Look through some of my work and experience! If
+              you like what you see and have a project you need coded, don’t
+              hestiate to contact me.
+            </p>
+            <button class="btn-orange btn-about">Get My Resume</button>
+          </div>
+
           <div class="about-horizontal"></div>
 
           <div class="about-section-skills">
@@ -223,35 +245,67 @@
           </div>
         </section>
         <section class="form_section">
-          <p>
-            I'm always interested in hearing about new projects, so if you'd
-            like to chat please get in touch.
-          </p>
-          <form
-            class="form_element"
-            action="https://formspree.io/f/xjvdwjpe"
-            method="post"
-          >
+          <div class="form">
+            <p>
+              I'm always interested in hearing about new projects, so if you'd
+              like to chat please get in touch.
+            </p>
+            <form
+              class="form_element"
+              action="https://formspree.io/f/xjvdwjpe"
+              method="post"
+            >
+
             <input
-              type="text"
-              required
-              placeholder="Full Name"
-              name="name"
-              maxlength="30"
-            />
-            <input type="email" required placeholder="Email address" name="email" />
-            <textarea
-              name="message"
-              required
-              placeholder="Enter text here"
-              maxlength="500"
-              cols="30"
-              rows="5"
-            ></textarea>
-            <button class="btn-orange btn-form" type="submit">Get in touch</button>
-          </form>
+                type="text"
+                required
+                placeholder="Full Name"
+                name="full name"
+                maxlength="30"
+                class="input-fullname"
+              />
+
+              <input
+                type="text"
+                required
+                placeholder="First Name"
+                name="first name"
+                maxlength="30"
+                class="input-name"
+              />
+
+              <input
+                type="text"
+                required
+                placeholder="Last Name"
+                name="last name"
+                maxlength="30"
+                class="input-name"
+              />
+
+              <input
+                type="email"
+                required
+                placeholder="Email address"
+                name="email"
+                class="input-email"
+              />
+              <textarea
+                name="message"
+                required
+                placeholder="Enter text here"
+                maxlength="500"
+                cols="30"
+                rows="5"
+              ></textarea>
+              <button class="btn-orange btn-form" type="submit">
+                Get in touch
+              </button>
+            </form>
+          </div>
+
           <div class="line"></div>
-          <ul class="hero-section-icons" id="bottom-social">
+          <ul class="hero-section-icons icon-desktop" id="bottom-social">
             <li>
               <a href="#"
                 ><img src="./icons/dark-github-icon.png" alt="github icon"
