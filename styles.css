@@ -457,6 +457,10 @@ header {
     flex-direction: column;
   }
 
+  .hero-section-icons img:hover {
+    transform: scaleX(1.5);
+  }
+
   .hero-section-greet {
     display: flex;
     flex-direction: column;
