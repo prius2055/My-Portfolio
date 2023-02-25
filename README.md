@@ -113,7 +113,6 @@ npm start
 > The following features can be included in the project
 
 - [ ] **[More styling to the UI]**
-- [ ] **[A Desktop view]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
