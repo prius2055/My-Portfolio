@@ -480,10 +480,10 @@ header {
   }
 
   @keyframes grow {
-    
     0% {
       transform: scaleY(1);
     }
+
     25% {
       transform: scaleY(1.1);
     }
@@ -708,10 +708,6 @@ header {
   .skills-header img {
     width: 20px;
     height: 20px;
-  }
-  
-    .hero-section-icons img:hover {
-    transform: scaleX(1.5);
   }
 
   .hero-section-icons img:hover {
