@@ -455,6 +455,7 @@ header {
   .hero-section-icons {
     display: flex;
     flex-direction: column;
+    transition: 1s;
   }
 
   .hero-section-greet {
@@ -614,6 +615,7 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
   }
 
   .work-card-details {
