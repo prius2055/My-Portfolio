@@ -383,6 +383,7 @@ header {
   background-color: #fbf8f7;
   font-family: "Inter", sans-serif;
   color: #3c3a39;
+  border: none;
 }
 
 .form_element textarea::placeholder {
@@ -566,7 +567,10 @@ header {
   }
 
   .btn-orange {
-    background-color: #f55800;
+    background-color: #ff6b00;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   .btn-orange:hover {
@@ -733,10 +737,8 @@ header {
   }
 
   .btn-form {
-    width: 50%;
-    place-self: center;
-    margin-bottom: 124px;
-    margin-top: 0;
+    width: 35%;
+    padding: 10px;
   }
 
   .line {
@@ -790,5 +792,10 @@ header {
 
   .about-section {
     background-position: right 0% bottom 93%;
+  }
+
+  .btn-form {
+    width: 15%;
+    padding: 10px;
   }
 }
