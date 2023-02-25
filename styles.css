@@ -615,6 +615,11 @@ header {
     grid-template-columns: 32.5% 32.5% 32.5%;
   }
 
+  .work-card:hover {
+    transform: scaleX(1.2);
+    transform: scaleY(1.2);
+  }
+  
   .work-card {
     width: 100%;
     display: flex;
