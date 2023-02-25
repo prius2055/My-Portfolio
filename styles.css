@@ -470,6 +470,30 @@ header {
     line-height: 82px;
     letter-spacing: 0.3px;
     margin-bottom: 24px;
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes grow {
+    0% {
+      transform: scaleY(1);
+    }
+    25% {
+      transform: scaleY(1.1);
+    }
+
+    50% {
+      transform: scaleY(1.2);
+    }
+
+    75% {
+      transform: scaleY(1.3);
+    }
+
+    100% {
+      transform: scaleY(1);
+    }
   }
 
   .hero-section-greet h2 {
