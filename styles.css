@@ -457,10 +457,6 @@ header {
     flex-direction: column;
   }
 
-  .hero-section-icons img:hover {
-    transform: scaleX(1.5);
-  }
-
   .hero-section-greet {
     display: flex;
     flex-direction: column;
@@ -480,6 +476,7 @@ header {
   }
 
   @keyframes grow {
+    
     0% {
       transform: scaleY(1);
     }
@@ -707,6 +704,10 @@ header {
   .skills-header img {
     width: 20px;
     height: 20px;
+  }
+  
+    .hero-section-icons img:hover {
+    transform: scaleX(1.5);
   }
 
   .form_section {
