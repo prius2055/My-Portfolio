@@ -255,17 +255,19 @@
               action="https://formspree.io/f/xjvdwjpe"
               method="post"
             >
-
-            <input
+              <label for="fullname">Full name</label>
+              <input
                 type="text"
+                id="fullname"
                 required
                 placeholder="Full Name"
                 name="full name"
                 maxlength="30"
                 class="input-fullname"
               />
-
+              <label for="firstname">First name</label>
               <input
+                id="firstname"
                 type="text"
                 required
                 placeholder="First Name"
@@ -274,7 +276,9 @@
                 class="input-name"
               />
 
+              <label for="lastname">Last name</label>
               <input
+                id="lastname"
                 type="text"
                 required
                 placeholder="Last Name"
@@ -282,15 +286,19 @@
                 maxlength="30"
                 class="input-name"
               />
-
+              <label for="email">Email</label>
               <input
+                id="email"
                 type="email"
                 required
                 placeholder="Email address"
                 name="email"
                 class="input-email"
               />
+
+              <label for="message">Message</label>
               <textarea
+                id="message"
                 name="message"
                 required
                 placeholder="Enter text here"

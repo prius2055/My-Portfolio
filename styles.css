@@ -339,6 +339,11 @@ header {
   padding-right: 24px;
 }
 
+.form_section label {
+  display: none;
+  color: #1a1818;
+}
+
 .form {
   display: flex;
   flex-direction: column;
