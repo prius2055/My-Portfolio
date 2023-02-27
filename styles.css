@@ -621,6 +621,11 @@ header {
     flex-direction: column;
   }
 
+  .work-card:hover {
+    transform: scaleX(1.2);
+    transform: scaleY(1.2);
+  }
+
   .work-card-details {
     display: flex;
     flex-direction: column;
