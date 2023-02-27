@@ -62,6 +62,7 @@
 - **[A headline section]**
 - **[A works and about me section]**
 - **[A Contact form section]**
+- **[Animation and transition]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
