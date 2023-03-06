@@ -2,7 +2,7 @@ const mobileNav = document.querySelector('.mobile-nav');
 const hamburger = document.querySelector('.hamburger');
 const mobileNavLink = document.querySelectorAll('.nav-link');
 
-hamburger.addEventListener('click', function () {
+hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   mobileNav.classList.toggle('active');
 });
