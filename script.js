@@ -13,3 +13,4 @@ mobileNavLink.forEach((nav) => {
     hamburger.classList.remove("active");
   });
 });
+
