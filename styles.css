@@ -910,3 +910,9 @@ header {
     padding: 10px;
   }
 }
+
+/* mobile popup goes there */
+
+.modal {
+  color: black;
+}
