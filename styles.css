@@ -67,7 +67,7 @@ header {
 
 .mobile-nav li {
   list-style: none;
-  border-bottom: 1px solid #6F6C6B;
+  border-bottom: 1px solid #6f6c6b;
   padding-bottom: 10px;
   margin-top: 60px;
   width: 100%;
@@ -390,7 +390,6 @@ header {
 .hamburger.active img:nth-child(3) {
   transform: translateY(-3px) rotate(-45deg);
   margin-left: 280%;
-
 }
 
 #form_section {
@@ -476,7 +475,7 @@ header {
   height: 5px;
   max-width: 134px;
   background-color: #0d151e;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .bottom_line.active {
