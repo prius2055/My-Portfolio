@@ -32,6 +32,10 @@ header {
   text-decoration: none;
 }
 
+.logo.active {
+  display: none;
+}
+
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -39,24 +43,19 @@ header {
   cursor: pointer;
 }
 
-.hamburger.active img:nth-child(1) {
-  transform: translateY(3px) rotate(45deg);
-}
-
-.hamburger.active img:nth-child(2) {
-  display: none;
-}
-
-.hamburger.active img:nth-child(3) {
-  transform: translateY(-3px) rotate(-45deg);
-}
-
 .hamburger img {
   height: 6px;
   width: 24px;
 }
 
+.hero-section-icons img {
+  margin-right: 21px;
+}
 
+.works-section-detail img {
+  margin-top: 80px;
+  margin-bottom: 24px;
+}
 
 .desktop-nav {
   display: none;
@@ -68,21 +67,30 @@ header {
 
 .mobile-nav li {
   list-style: none;
+  border-bottom: 1px solid #6f6c6b;
+  padding-bottom: 10px;
+  margin-top: 60px;
+  width: 100%;
 }
 
 .mobile-nav li a {
-  color: #fff;
+  color: #fff5e1;
   text-decoration: none;
+  padding-left: 16px;
 }
 
 .mobile-nav.active {
-  background-color: #1c1a19;
+  background-color: #3c3a39;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 20vh;
-  width: 100%;
+  align-items: flex-start;
+  padding-right: 24px;
+  height: 85vh;
+  width: 320%;
+}
+
+.main-container.active {
+  display: none;
 }
 
 .hero-section {
@@ -134,10 +142,6 @@ header {
   list-style: none;
 }
 
-.hero-section-icons img {
-  margin-right: 21px;
-}
-
 .hero-image {
   position: absolute;
   right: 0;
@@ -177,11 +181,6 @@ header {
   font-size: 32px;
   line-height: 44px;
   color: #1c1a19;
-}
-
-.works-section-detail img {
-  margin-top: 80px;
-  margin-bottom: 24px;
 }
 
 .works-section-story p {
@@ -378,6 +377,21 @@ header {
   height: 20px;
 }
 
+.hamburger.active img:nth-child(1) {
+  transform: translateY(3px) rotate(45deg);
+  margin-left: 280%;
+  margin-top: 10%;
+}
+
+.hamburger.active img:nth-child(2) {
+  display: none;
+}
+
+.hamburger.active img:nth-child(3) {
+  transform: translateY(-3px) rotate(-45deg);
+  margin-left: 280%;
+}
+
 #form_section {
   display: flex;
   justify-content: center;
@@ -459,9 +473,13 @@ header {
 
 .bottom_line {
   height: 5px;
-  width: 134px;
+  max-width: 134px;
   background-color: #0d151e;
-  margin-bottom: 2%;
+  margin: 0 auto;
+}
+
+.bottom_line.active {
+  margin: 10% auto 0 auto;
 }
 
 /* DESKTOP VIEW */
