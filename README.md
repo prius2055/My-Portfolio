@@ -63,6 +63,7 @@
 - **[A works and about me section]**
 - **[A Contact form section]**
 - **[Beautiful animation and transition]**
+- **[A modal window that displays details of each project]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,6 +112,8 @@ npm start
 
 👤 **Yacos(https://github.com/Yacoubou-seidou)**
 👤 **Samuel (https://github.com/yawsamcode)**
+👤 **BENSON  (https://github.com/Bennyjoez)**
+👤 **Umair (https://github.com/emhamza)**
 
 - GitHub: [@githubhandle](https://github.com/prius2055)
 
