@@ -66,12 +66,9 @@ projects.map((project) => {
   console.log(project);
   let div = document.createElement("div");
   div.className = "work-card";
- 
-  div.innerHTML = `<div class='work-card-details'><h2>${project.name}</h2><p>${
-    project.description
-  }</p><ul class='list list-grey'>${project.technology.map(
-    (tech) => "<li>${tech}</li>"
-  )}</ul></div> <button class='btn-orange btn-orange-big'>See projects</button>`;
+
+  div.innerHTML = `<div class='work-card-details'><h2>${project.name}</h2><p>${project.description}</p><ul class='list list-grey'><li>${project.technology[0]}</li><li>${project.technology[1]}</li><li>${project.technology[2]}</li>
+  </ul></div> <button class='btn-orange btn-orange-big'>See projects</button>`;
 
   projectCards.appendChild(div);
 });
@@ -83,8 +80,6 @@ const mobileNavLink = document.querySelectorAll(".nav-link");
 const mainContainer = document.querySelector(".main-container");
 const bottomLine = document.querySelector(".bottom_line");
 const buttonOrangeBig = document.querySelectorAll(".btn-orange-big");
-
-
 
 const modalContainer = document.querySelector(".modal-container");
 const modalOverlay = document.querySelector(".overlay");
