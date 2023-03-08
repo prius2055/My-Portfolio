@@ -63,13 +63,10 @@ const projects = [
 const projectCards = document.querySelector('.works-card');
 
 projects.forEach((project) => {
-
-    const div = document.createElement('div');
+  const div = document.createElement('div');
   div.className = 'work-card';
-
   div.innerHTML = `<div class='work-card-details'><h2>${project.name}</h2><p>${project.description}</p><ul class='list list-grey'><li>${project.technology[0]}</li><li>${project.technology[1]}</li><li>${project.technology[2]}</li>
   </ul></div> <button class='btn-orange btn-orange-big'>See projects</button>`;
-
   projectCards.appendChild(div);
 });
 
