@@ -834,7 +834,7 @@ header {
 
   .work-card:hover {
     transform: scaleX(1.05);
-    box-shadow: 0px -1px 7px 4px rgba(0,0,0,0.6);
+    box-shadow: 0px -1px 7px 4px rgba(0, 0, 0, 60%);
   }
 
   .work-card-details {
