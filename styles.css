@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Crete Round", "Poppins", "Roboto", "inter", sans-serif;
+  font-family: 'Crete Round', 'Poppins', 'Roboto', 'inter', sans-serif;
   color: #fff;
 }
 
@@ -24,7 +24,7 @@ header {
 }
 
 .logo {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -97,7 +97,7 @@ header {
 .hero-section {
   background-color: #1c1a19;
   padding: 120px 24px 120px 24px;
-  background-image: url("./img/hero-image.png");
+  background-image: url('./img/hero-image.png');
   background-repeat: no-repeat;
   background-size: 55%;
   background-position: right -5% bottom -155%;
@@ -105,7 +105,7 @@ header {
 }
 
 .hero-section-greet h1 {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
@@ -116,7 +116,7 @@ header {
 }
 
 .hero-section-greet h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -125,7 +125,7 @@ header {
 }
 
 .hero-section-greet p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -160,7 +160,7 @@ header {
 }
 
 .works-section-header h1 {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -175,47 +175,10 @@ header {
   background-color: #212121;
 }
 
-.works-section-story h2 {
-  font-family: "Crete Round", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
-  color: #1c1a19;
-}
-
-.works-section-story p {
-  margin-bottom: 12px;
-  color: #1c1a19;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-
 .list {
   display: flex;
   margin-top: 12px;
   margin-bottom: 12px;
-}
-
-.list-white {
-  margin-top: 12px;
-  margin-bottom: 12px;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.list-white li {
-  list-style: none;
-  color: #091e42;
-  background-color: white;
-  font-family: "Inter", sans-serif;
-  border: 1px solid #8993a4;
-  padding: 10px 12px;
-  margin-right: 12px;
 }
 
 .btn-orange {
@@ -224,11 +187,11 @@ header {
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  margin-bottom: 24px;
   line-height: 24px;
   border: none;
   color: white;
   cursor: pointer;
+  width: 100%;
 }
 
 .btn-orange:hover {
@@ -238,17 +201,67 @@ header {
   border: 1px solid #f55800;
 }
 
-.works-card {
-  display: grid;
-  row-gap: 24px;
+.btn-orange.btn-orange-big {
+  width: 100%;
+  margin: 0;
 }
 
-.work-card {
+.first-work-card {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./img/large-image.png);
+  background-repeat: no-repeat;
+}
+
+.first-work-card h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 85%;
+  color: #091e42;
+}
+
+.first-work-card p {
+  margin-bottom: 12px;
+  color: #1c1a19;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 3%;
+}
+
+.first-work-card ul {
+  padding-left: 0;
+}
+
+.first-work-card ul li {
+  list-style: none;
+  color: #091e42;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  margin-right: 10px;
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.first-work-card .btn-orange {
+  width: 50%;
+}
+
+.work-cards {
   display: flex;
   flex-direction: column;
 }
 
-.work-card-details {
+.other-work-cards {
   display: flex;
   flex-direction: column;
   background-image: url(./img/work-card-bg.png);
@@ -257,11 +270,11 @@ header {
   padding-top: 85px;
   padding-bottom: 0;
   color: #fff;
-  margin-bottom: 0;
+  margin-bottom: 5%;
 }
 
-.work-card-details h2 {
-  font-family: "Crete Round", sans-serif;
+.other-work-cards h2 {
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -271,8 +284,8 @@ header {
   padding-right: 16px;
 }
 
-.work-card-details p {
-  font-family: "Inter", sans-serif;
+.other-work-cards p {
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -286,7 +299,7 @@ header {
   list-style: none;
   color: white;
   background: rgba(255, 255, 255, 0.24);
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -302,11 +315,6 @@ header {
   padding-right: 16px;
 }
 
-.btn-orange-big {
-  width: 100%;
-  margin: 0;
-}
-
 #about-section {
   background-image: url(./img/about-section-hero.png);
   background-repeat: no-repeat;
@@ -316,12 +324,16 @@ header {
   margin-top: 120px;
 }
 
+#about-section .btn-orange {
+  width: 50%;
+}
+
 .about-section-header {
   width: 100%;
 }
 
 .about-section-header h1 {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -331,7 +343,7 @@ header {
 }
 
 .about-section-header p {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -355,7 +367,7 @@ header {
 }
 
 .about-section-skills h2 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -370,7 +382,7 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 44px;
 }
 
@@ -415,7 +427,7 @@ header {
 
 .modal h2 {
   color: #172b4d;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -430,7 +442,7 @@ header {
 }
 
 .modal-list li {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -443,7 +455,7 @@ header {
 }
 
 .modal p {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -469,7 +481,7 @@ header {
 }
 
 .btn-modal span {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -492,7 +504,7 @@ header {
   padding-bottom: 20%;
   height: 100vh;
   position: absolute;
-  top: 1%;
+  top: 0;
   left: 0;
   z-index: 10;
   margin: 20% 3% 10% 3%;
@@ -529,7 +541,7 @@ header {
 }
 
 .form p {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 32px;
   font-weight: 700;
   text-align: center;
@@ -550,7 +562,7 @@ header {
   border-right: 0;
   padding: 14px 16px;
   margin-top: 40px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 400;
   text-align: left;
@@ -565,7 +577,7 @@ header {
   margin-top: 24px;
   margin-bottom: 24px;
   background-color: #fbf8f7;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #3c3a39;
   border: none;
 }
@@ -645,7 +657,7 @@ header {
   }
 
   .logo {
-    font-family: "inter", sans-serif;
+    font-family: 'inter', sans-serif;
     font-size: 20px;
     line-height: 20px;
   }
@@ -711,7 +723,7 @@ header {
   }
 
   .hero-section-greet h2 {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
@@ -719,21 +731,56 @@ header {
   }
 
   .hero-section-greet p {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 32px;
   }
 
-  .works-section {
-    margin: 15% 5%;
+  /* WORKS SECTION */
+
+  #works-section {
+    margin: 10% 5%;
   }
 
+  
   .works-section-header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 3%;
+    margin-bottom: 10%;
+  }
+
+  .work-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .first-work-card {
+   background-image: url(./img/iarge-image-2.png);
+   background-size: 50%;
+   margin-bottom: 5%;
+  }
+
+  .first-work-card h2 {
+    margin-top: 0;
+    margin-left: 55%;
+  }
+
+  .first-work-card p {
+    margin-left: 55%;
+    margin-top: 0;
+  }
+
+  .first-work-card ul {
+    margin-left: 55%;
+  }
+
+  .first-work-card .btn-orange {
+    width: 25%;
+    margin-left: 55%;
   }
 
   .works-section-header h1 {
@@ -742,11 +789,11 @@ header {
     text-align: start;
     align-self: center;
     margin-bottom: 0;
-    margin-right: 4%;
+    margin-right: 2%;
   }
 
   .hr {
-    width: 60%;
+    width: 65%;
     margin-bottom: 0;
     align-self: center;
   }
@@ -784,6 +831,7 @@ header {
   .list {
     display: flex;
     margin-bottom: 12px;
+    margin-right: 25%;
   }
 
   .list-white {
@@ -798,7 +846,7 @@ header {
     list-style: none;
     color: #091e42;
     background-color: white;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     border: 1px solid #8993a4;
     padding: 2% 4%;
     margin-right: 2%;
@@ -837,16 +885,15 @@ header {
     box-shadow: 0 -1px 7px 4px rgba(0, 0, 0, 60%);
   }
 
-  .work-card-details {
-    display: flex;
-    flex-direction: column;
-    background-image: url(./img/work-card-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 85px 16px 0 16px;
-    color: #fff;
-    margin-bottom: 0;
+  .other-work-cards {
+    margin-bottom: 3%;
+    width: 32%;
   }
+
+  .other-work-cards .btn-orange {
+    width:100%
+  }
+
 
   .work-card p {
     font-size: 17px;
@@ -868,10 +915,10 @@ header {
     margin: 0;
   }
 
-  .about-section {
+  #about-section {
     background-image: url(./img/about-section-hero-large.png);
     background-repeat: no-repeat;
-    background-position: right -90% bottom 93%;
+    background-position: right -100% bottom 85%;
     background-color: #1c1a19;
     padding: 15% 5% 25% 5%;
     margin-top: 120px;
@@ -930,7 +977,7 @@ header {
     transform: scaleX(1.5);
   }
 
-  .form_section {
+  #form_section {
     align-items: center;
     padding-top: 10%;
     padding-left: 5%;
@@ -976,7 +1023,7 @@ header {
     margin-top: 24px;
     margin-bottom: 24px;
     background-color: #fbf8f7;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #3c3a39;
     width: 100%;
   }
@@ -1016,7 +1063,7 @@ header {
   nav .desktop-nav li {
     list-style: none;
     margin-left: 32px;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -1039,12 +1086,11 @@ header {
     background-position: right 0% top 0%;
   }
 
-  .about-section {
-    background-position: right 0% bottom 93%;
+  .first-work-card {
+    background-size: 50%;
   }
 
-  .btn-form {
-    width: 15%;
-    padding: 10px;
+  #about-section {
+    background-position: right -20% bottom 85%;
   }
 }
