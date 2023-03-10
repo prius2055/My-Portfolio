@@ -238,20 +238,6 @@ header {
   padding-left: 0;
 }
 
-.first-work-card ul li {
-  list-style: none;
-  color: #091e42;
-  background-color: white;
-  font-family: 'Inter', sans-serif;
-  border: 1px solid #8993a4;
-  padding: 10px 12px;
-  margin-right: 10px;
-  margin-top: 12px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-}
-
 .first-work-card .btn-orange {
   width: 50%;
 }
@@ -510,6 +496,20 @@ header {
   margin: 20% 3% 10% 3%;
 }
 
+.first-work-card ul li {
+  list-style: none;
+  color: #091e42;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  margin-right: 10px;
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .hamburger.active img:nth-child(1) {
   transform: translateY(3px) rotate(45deg);
   margin-left: 280%;
@@ -737,12 +737,10 @@ header {
   }
 
   /* WORKS SECTION */
-
   #works-section {
     margin: 10% 5%;
   }
 
-  
   .works-section-header {
     display: flex;
     flex-direction: row;
@@ -759,9 +757,9 @@ header {
   }
 
   .first-work-card {
-   background-image: url(./img/iarge-image-2.png);
-   background-size: 50%;
-   margin-bottom: 5%;
+    background-image: url(./img/iarge-image-2.png);
+    background-size: 50%;
+    margin-bottom: 5%;
   }
 
   .first-work-card h2 {
@@ -775,11 +773,6 @@ header {
   }
 
   .first-work-card ul {
-    margin-left: 55%;
-  }
-
-  .first-work-card .btn-orange {
-    width: 25%;
     margin-left: 55%;
   }
 
@@ -859,6 +852,11 @@ header {
     line-height: 22px;
   }
 
+  .first-work-card .btn-orange {
+    width: 25%;
+    margin-left: 55%;
+  }
+
   .btn-orange:hover {
     letter-spacing: 0.03em;
     color: #f55800;
@@ -891,9 +889,8 @@ header {
   }
 
   .other-work-cards .btn-orange {
-    width:100%
+    width: 100%;
   }
-
 
   .work-card p {
     font-size: 17px;
@@ -971,6 +968,15 @@ header {
   .skills-header img {
     width: 20px;
     height: 20px;
+  }
+
+  .modal-detail img {
+    width: 60%;
+  }
+
+  .btn-modal img {
+    width: 12%;
+    height: 12%;
   }
 
   .hero-section-icons img:hover {
@@ -1060,6 +1066,38 @@ header {
     justify-content: space-between;
   }
 
+  .modal-list {
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+  }
+
+  .modal-list li {
+    padding: 1% 2%;
+  }
+
+  .modal-detail {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .modal-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5%;
+    width: 35%;
+  }
+
+  .modal-close {
+    width: 1.5%;
+    height: 1.5%;
+  }
+
+  .btn-modal {
+    padding: 2.5% 4%;
+  }
+
   nav .desktop-nav li {
     list-style: none;
     margin-left: 32px;
@@ -1092,5 +1130,13 @@ header {
 
   #about-section {
     background-position: right -20% bottom 85%;
+  }
+}
+
+/* DESKTOP 3 */
+
+@media screen and (min-width: 1200px) {
+  .first-work-card {
+    background-size: 30%;
   }
 }

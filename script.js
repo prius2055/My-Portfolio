@@ -80,11 +80,10 @@ const projects = [
 const projectCards = document.querySelector('.work-cards');
 const modalContainer = document.querySelector('.modal-container');
 
-projects.map((project, i) => {
+projects.forEach((project, i) => {
   const div = document.createElement('div');
   div.className = `${i === 0 ? 'first-work-card' : 'other-work-cards'}`;
   div.innerHTML = `
-        
           <h2>${project.name}</h2>
           <p>${project.description}</p>
           <ul class="list list-grey">
@@ -92,7 +91,6 @@ projects.map((project, i) => {
             <li>${project.technology[1]}</li>
             <li>${project.technology[2]}</li>
           </ul>
-      
   <button class='btn-orange'>See projects</button>`;
   projectCards.appendChild(div);
 });
@@ -115,27 +113,29 @@ projectButtons.forEach((btn, j) => {
           <li>${project.technology[1]}</li>
           <li>${project.technology[2]}</li>
         </ul>
-        <img src='${project.image[0]}' alt='modal hero image' />
+        <div class='modal-detail'><img src='${project.image[0]}' alt='modal hero image' />
+        <div class='modal-message'>
         <p>
-         ${project.description}
-        </p>
-        <div class='modal-buttons'>
-          <button class='btn-modal'>
-            <span>See Live</span
-            ><img src='${project.liveVersion}' alt='share button' />
-          </button>
-          <button class='btn-modal'>
-            <span>See Source</span
-            ><img src='${project.source}' alt='share button' />
-          </button>
+        ${project.description}
+       </p>
+       <div class='modal-buttons'>
+         <button class='btn-modal'>
+           <span>See Live</span
+           ><img src='${project.liveVersion}' alt='share button' />
+         </button>
+         <button class='btn-modal'>
+           <span>See Source</span
+           ><img src='${project.source}' alt='share button' />
+         </button></div>
+        
+          </div>
         </div>
       </div>`;
         modalContainer.innerHTML = modal;
         document.body.append(modalContainer);
-      } else {
-        return;
       }
     });
+
     modalContainer.classList.add('active');
     modalOverlay.classList.add('active');
 
