@@ -5,13 +5,14 @@
 }
 
 body {
-  font-family: "Crete Round", "Poppins", "Roboto", "inter", sans-serif;
+  font-family: 'Crete Round', 'Poppins', 'Roboto', 'inter', sans-serif;
   color: #fff;
 }
 
 .container {
   max-width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 header {
@@ -23,7 +24,7 @@ header {
 }
 
 .logo {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -96,7 +97,7 @@ header {
 .hero-section {
   background-color: #1c1a19;
   padding: 120px 24px 120px 24px;
-  background-image: url("./img/hero-image.png");
+  background-image: url('./img/hero-image.png');
   background-repeat: no-repeat;
   background-size: 55%;
   background-position: right -5% bottom -155%;
@@ -104,7 +105,7 @@ header {
 }
 
 .hero-section-greet h1 {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
@@ -115,7 +116,7 @@ header {
 }
 
 .hero-section-greet h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -124,7 +125,7 @@ header {
 }
 
 .hero-section-greet p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -159,7 +160,7 @@ header {
 }
 
 .works-section-header h1 {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -174,46 +175,10 @@ header {
   background-color: #212121;
 }
 
-.works-section-story h2 {
-  font-family: "Crete Round", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
-  color: #1c1a19;
-}
-
-.works-section-story p {
-  margin-bottom: 12px;
-  color: #1c1a19;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-
 .list {
   display: flex;
-  margin-bottom: 12px;
-}
-
-.list-white {
   margin-top: 12px;
   margin-bottom: 12px;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.list-white li {
-  list-style: none;
-  color: #091e42;
-  background-color: white;
-  font-family: "Inter", sans-serif;
-  border: 1px solid #8993a4;
-  padding: 10px 12px;
-  margin-right: 12px;
 }
 
 .btn-orange {
@@ -222,10 +187,11 @@ header {
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  margin-bottom: 24px;
   line-height: 24px;
   border: none;
   color: white;
+  cursor: pointer;
+  width: 100%;
 }
 
 .btn-orange:hover {
@@ -235,53 +201,94 @@ header {
   border: 1px solid #f55800;
 }
 
-.works-card {
-  display: grid;
-  row-gap: 24px;
+.btn-orange.btn-orange-big {
+  width: 100%;
+  margin: 0;
 }
 
-.work-card {
+.first-work-card {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./img/large-image.png);
+  background-repeat: no-repeat;
+}
+
+.first-work-card h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 85%;
+  color: #091e42;
+}
+
+.first-work-card p {
+  margin-bottom: 12px;
+  color: #1c1a19;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 3%;
+}
+
+.first-work-card ul {
+  padding-left: 0;
+}
+
+.first-work-card .btn-orange {
+  width: 50%;
+}
+
+.work-cards {
   display: flex;
   flex-direction: column;
 }
 
-.work-card-details {
+.other-work-cards {
   display: flex;
   flex-direction: column;
   background-image: url(./img/work-card-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 85px 16px 0 16px;
+  padding-top: 85px;
+  padding-bottom: 0;
   color: #fff;
-  margin-bottom: 0;
+  margin-bottom: 5%;
 }
 
-.work-card h2 {
-  font-family: "Crete Round", sans-serif;
+.other-work-cards h2 {
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
   color: #fff;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-.work-card p {
-  font-family: "Inter", sans-serif;
+.other-work-cards p {
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 5%;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .list-grey li {
   list-style: none;
   color: white;
   background: rgba(255, 255, 255, 0.24);
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
   border: 1px solid #ffffff3d;
   padding: 10px 12px;
@@ -290,11 +297,8 @@ header {
 
 .list-grey {
   padding-bottom: 22px;
-}
-
-.btn-orange-big {
-  width: 100%;
-  margin: 0;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 #about-section {
@@ -306,12 +310,16 @@ header {
   margin-top: 120px;
 }
 
+#about-section .btn-orange {
+  width: 50%;
+}
+
 .about-section-header {
   width: 100%;
 }
 
 .about-section-header h1 {
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -321,7 +329,7 @@ header {
 }
 
 .about-section-header p {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -345,7 +353,7 @@ header {
 }
 
 .about-section-skills h2 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -360,7 +368,7 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 44px;
 }
 
@@ -375,6 +383,131 @@ header {
 .skills-header img {
   width: 20px;
   height: 20px;
+}
+
+/* mobile popup goes there */
+
+.modal-container {
+  display: none;
+}
+
+.modal {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5%;
+}
+
+.modal-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-close {
+  width: 5%;
+  height: 5%;
+  cursor: pointer;
+}
+
+.modal h2 {
+  color: #172b4d;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.modal-list {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5%;
+  margin-top: 15%;
+}
+
+.modal-list li {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+  list-style: none;
+  border: 1px solid #3c3a39;
+  margin-right: 2%;
+  padding: 2%;
+}
+
+.modal p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn-modal {
+  display: flex;
+  align-items: center;
+  background: #ff6b00;
+  border: none;
+  padding: 2%;
+  color: #fff;
+}
+
+.btn-modal span {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 1.5%;
+}
+
+.btn-modal img {
+  width: 12%;
+  height: 12%;
+  margin-left: 3%;
+}
+
+.modal button {
+  margin-right: 5%;
+}
+
+.modal-container.active {
+  display: block;
+  padding-bottom: 20%;
+  height: 100vh;
+  position: fixed;
+  top: -32%;
+  left: 0;
+  z-index: 10;
+  margin: 20% 3% 10% 3%;
+}
+
+.first-work-card ul li {
+  list-style: none;
+  color: #091e42;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  margin-right: 10px;
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .hamburger.active img:nth-child(1) {
@@ -408,7 +541,7 @@ header {
 }
 
 .form p {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 32px;
   font-weight: 700;
   text-align: center;
@@ -429,7 +562,7 @@ header {
   border-right: 0;
   padding: 14px 16px;
   margin-top: 40px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 400;
   text-align: left;
@@ -444,7 +577,7 @@ header {
   margin-top: 24px;
   margin-bottom: 24px;
   background-color: #fbf8f7;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #3c3a39;
   border: none;
 }
@@ -482,6 +615,23 @@ header {
   margin: 10% auto 0 auto;
 }
 
+/* Modal */
+
+.overlay {
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+  background-color: rgb(0, 0, 0, 88%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+}
+
 /* DESKTOP VIEW */
 
 @media screen and (min-width: 768px) {
@@ -507,7 +657,7 @@ header {
   }
 
   .logo {
-    font-family: "inter", sans-serif;
+    font-family: 'inter', sans-serif;
     font-size: 20px;
     line-height: 20px;
   }
@@ -573,7 +723,7 @@ header {
   }
 
   .hero-section-greet h2 {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
@@ -581,21 +731,49 @@ header {
   }
 
   .hero-section-greet p {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 32px;
   }
 
-  .works-section {
-    margin: 15% 5%;
+  /* WORKS SECTION */
+  #works-section {
+    margin: 10% 5%;
   }
 
   .works-section-header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 3%;
+    margin-bottom: 10%;
+  }
+
+  .work-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .first-work-card {
+    background-image: url(./img/iarge-image-2.png);
+    background-size: 50%;
+    margin-bottom: 5%;
+  }
+
+  .first-work-card h2 {
+    margin-top: 0;
+    margin-left: 55%;
+  }
+
+  .first-work-card p {
+    margin-left: 55%;
+    margin-top: 0;
+  }
+
+  .first-work-card ul {
+    margin-left: 55%;
   }
 
   .works-section-header h1 {
@@ -604,11 +782,11 @@ header {
     text-align: start;
     align-self: center;
     margin-bottom: 0;
-    margin-right: 4%;
+    margin-right: 2%;
   }
 
   .hr {
-    width: 60%;
+    width: 65%;
     margin-bottom: 0;
     align-self: center;
   }
@@ -646,6 +824,7 @@ header {
   .list {
     display: flex;
     margin-bottom: 12px;
+    margin-right: 25%;
   }
 
   .list-white {
@@ -660,7 +839,7 @@ header {
     list-style: none;
     color: #091e42;
     background-color: white;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     border: 1px solid #8993a4;
     padding: 2% 4%;
     margin-right: 2%;
@@ -671,6 +850,11 @@ header {
     padding: 10px;
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .first-work-card .btn-orange {
+    width: 25%;
+    margin-left: 55%;
   }
 
   .btn-orange:hover {
@@ -695,19 +879,17 @@ header {
   }
 
   .work-card:hover {
-    transform: scaleX(1.2);
-    transform: scaleY(1.2);
+    transform: scaleX(1.05);
+    box-shadow: 0 -1px 7px 4px rgba(0, 0, 0, 60%);
   }
 
-  .work-card-details {
-    display: flex;
-    flex-direction: column;
-    background-image: url(./img/work-card-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 85px 16px 0 16px;
-    color: #fff;
-    margin-bottom: 0;
+  .other-work-cards {
+    margin-bottom: 3%;
+    width: 32%;
+  }
+
+  .other-work-cards .btn-orange {
+    width: 100%;
   }
 
   .work-card p {
@@ -730,10 +912,10 @@ header {
     margin: 0;
   }
 
-  .about-section {
+  #about-section {
     background-image: url(./img/about-section-hero-large.png);
     background-repeat: no-repeat;
-    background-position: right -90% bottom 93%;
+    background-position: right -100% bottom 85%;
     background-color: #1c1a19;
     padding: 15% 5% 25% 5%;
     margin-top: 120px;
@@ -788,11 +970,20 @@ header {
     height: 20px;
   }
 
+  .modal-detail img {
+    width: 60%;
+  }
+
+  .btn-modal img {
+    width: 12%;
+    height: 12%;
+  }
+
   .hero-section-icons img:hover {
     transform: scaleX(1.5);
   }
 
-  .form_section {
+  #form_section {
     align-items: center;
     padding-top: 10%;
     padding-left: 5%;
@@ -838,7 +1029,7 @@ header {
     margin-top: 24px;
     margin-bottom: 24px;
     background-color: #fbf8f7;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #3c3a39;
     width: 100%;
   }
@@ -875,10 +1066,42 @@ header {
     justify-content: space-between;
   }
 
+  .modal-list {
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+  }
+
+  .modal-list li {
+    padding: 1% 2%;
+  }
+
+  .modal-detail {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .modal-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5%;
+    width: 35%;
+  }
+
+  .modal-close {
+    width: 1.5%;
+    height: 1.5%;
+  }
+
+  .btn-modal {
+    padding: 2.5% 4%;
+  }
+
   nav .desktop-nav li {
     list-style: none;
     margin-left: 32px;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -901,12 +1124,19 @@ header {
     background-position: right 0% top 0%;
   }
 
-  .about-section {
-    background-position: right 0% bottom 93%;
+  .first-work-card {
+    background-size: 50%;
   }
 
-  .btn-form {
-    width: 15%;
-    padding: 10px;
+  #about-section {
+    background-position: right -20% bottom 85%;
+  }
+}
+
+/* DESKTOP 3 */
+
+@media screen and (min-width: 1200px) {
+  .first-work-card {
+    background-size: 30%;
   }
 }
