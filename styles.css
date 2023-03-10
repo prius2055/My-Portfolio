@@ -489,8 +489,8 @@ header {
   display: block;
   padding-bottom: 20%;
   height: 100vh;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: -32%;
   left: 0;
   z-index: 10;
   margin: 20% 3% 10% 3%;
