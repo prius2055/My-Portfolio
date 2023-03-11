@@ -63,9 +63,7 @@
 - **[A works and about me section]**
 - **[A Contact form section]**
 - **[Beautiful animation and transition]**
-- **[A modal window that displays details of each project]**
-- **[The Client-Side Form validation]**
-
+- **[Local Data Storage, data store in JS objects]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
