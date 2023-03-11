@@ -171,3 +171,23 @@ mobileNavLink.forEach((nav) => {
     bottomLine.classList.toggle('active');
   });
 });
+
+/* form validation */
+
+const form = document.querySelector('form');
+const email = document.querySelector('.input-email');
+const errorMsg = document.querySelector('.error');
+
+const emailPattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+form.addEventListener('submit', (event) => {
+  const isValid = email.value.length === 0 || emailPattern.test(email.value);
+  if (!isValid) {
+    errorMsg.textContent = 'Your email address should all be in lower case. yourname@example.com';
+    errorMsg.className = 'error active';
+    event.preventDefault();
+  } else {
+    errorMsg.textContent = '';
+    errorMsg.className = 'error';
+  }
+});

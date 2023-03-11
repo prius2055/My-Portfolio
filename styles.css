@@ -586,11 +586,31 @@ header {
   color: #3c3a39;
 }
 
+.btn-form-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 124px;
+  margin-top: 0;
+}
+
+/* .btn-form-container span {
+  background-color: blue;
+} */
+
 .btn-form {
   width: 50%;
   place-self: center;
-  margin-bottom: 124px;
-  margin-top: 0;
+  background-color: #ff6b00;
+  padding: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 2%;
 }
 
 .line {
@@ -630,6 +650,23 @@ header {
   z-index: 5;
   height: 100%;
   width: 100%;
+}
+
+/* INPUT VALIDATION */
+
+.error {
+  display: none;
+  width: 100%;
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  color: red;
+  border-radius: 5px;
+}
+
+.error.active {
+  display: block;
+  padding: 1%;
 }
 
 /* DESKTOP VIEW */
@@ -1038,9 +1075,17 @@ header {
     color: #3c3a39;
   }
 
+  .btn-form-container {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
   .btn-form {
-    width: 35%;
+    width: 50%;
     padding: 10px;
+    margin-right: 2%;
   }
 
   .line {
@@ -1140,3 +1185,5 @@ header {
     background-size: 30%;
   }
 }
+
+/* This is the style of our error messages */

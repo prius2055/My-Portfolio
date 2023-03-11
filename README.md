@@ -56,7 +56,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-> The application is a static website of a portfolio
+> The portfolio site with an dynamic design using Javascript
 
 - **[A navigation bar]**
 - **[A headline section]**
@@ -64,6 +64,8 @@
 - **[A Contact form section]**
 - **[Beautiful animation and transition]**
 - **[A modal window that displays details of each project]**
+- **[The Client-Side Form validation]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

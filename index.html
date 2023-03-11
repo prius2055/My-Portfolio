@@ -163,13 +163,13 @@
               like to chat please get in touch.
             </p>
             <form
+              id="form"
               class="form_element"
               action="https://formspree.io/f/xjvdwjpe"
               method="post"
             >
               <input
                 type="text"
-                required
                 placeholder="Full Name"
                 name="full name"
                 maxlength="30"
@@ -178,7 +178,6 @@
 
               <input
                 type="text"
-                required
                 placeholder="First Name"
                 name="first name"
                 maxlength="30"
@@ -187,7 +186,6 @@
 
               <input
                 type="text"
-                required
                 placeholder="Last Name"
                 name="last name"
                 maxlength="30"
@@ -195,12 +193,14 @@
               />
 
               <input
-                type="email"
-                required
+              type="email"
                 placeholder="Email address"
+                required
                 name="email"
                 class="input-email"
+                title="Your email address should be lower case"
               />
+
               <textarea
                 name="message"
                 required
@@ -209,9 +209,10 @@
                 cols="30"
                 rows="5"
               ></textarea>
-              <button class="btn-orange btn-form" type="submit">
-                Get in touch
-              </button>
+              <div class="btn-form-container">
+                <button class="btn-form" type="submit">Get in touch</button>
+                <span class="error" aria-live="polite">Ih</span>
+              </div>
             </form>
           </div>
 
@@ -250,6 +251,7 @@
       <!-- Mobile popup goes here -->
       <div class="modal-container"></div>
     </div>
+
     <script src="./script.js" type="text/javascript"></script>
   </body>
 </html>
