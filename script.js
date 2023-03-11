@@ -178,16 +178,50 @@ const form = document.querySelector('form');
 const email = document.querySelector('.input-email');
 const errorMsg = document.querySelector('.error');
 
-const emailPattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+const fullName = document.getElementById('fuName');
+const firstName = document.getElementById('fName');
+const lastName = document.getElementById('lName');
+const msg = document.getElementById('message');
+
+const emailPattern =
+  /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 form.addEventListener('submit', (event) => {
   const isValid = email.value.length === 0 || emailPattern.test(email.value);
   if (!isValid) {
-    errorMsg.textContent = 'Your email address should all be in lower case. yourname@example.com';
+    errorMsg.textContent =
+      'Your email address should all be in lower case. yourname@example.com';
     errorMsg.className = 'error active';
     event.preventDefault();
   } else {
     errorMsg.textContent = '';
     errorMsg.className = 'error';
+  }
+});
+
+/* FORM STORAGE */
+
+let userInputs = [fullName, firstName, lastName, email, msg];
+
+function userData() {
+  const userObject = {
+    fullname: fullName.value,
+    firstname: firstName.value,
+    lastname: lastName.value,
+    email: email.value,
+    message: msg.value,
+  };
+  localStorage.setItem('user', JSON.stringify(userObject));
+}
+
+userInputs.forEach((input) => {
+  input.addEventListener('change', userData);
+  const parsedObject = JSON.parse(localStorage.getItem('user'));
+  if (parsedObject) {
+    fullName.value = parsedObject.fullname;
+    firstName.value = parsedObject.firstname;
+    lastName.value = parsedObject.lastName;
+    email.value = parsedObject.email;
+    msg.value = parsedObject.message;
   }
 });
