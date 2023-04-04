@@ -209,8 +209,10 @@ header {
 .first-work-card {
   display: flex;
   flex-direction: column;
-  background-image: url(./img/large-image.png);
+  background-image: url(./img/large-image.jpg);
   background-repeat: no-repeat;
+
+  /* background-size: cover; */
 }
 
 .first-work-card h2 {
@@ -794,8 +796,8 @@ header {
   }
 
   .first-work-card {
-    background-image: url(./img/iarge-image-2.png);
-    background-size: 50%;
+    background-image: url(./img/large-image-2.png);
+    background-size: cover;
     margin-bottom: 5%;
   }
 
