@@ -211,6 +211,7 @@ header {
   flex-direction: column;
   background-image: url(./img/large-image.jpg);
   background-repeat: no-repeat;
+
   /* background-size: cover; */
 }
 
