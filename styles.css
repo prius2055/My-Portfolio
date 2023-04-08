@@ -170,7 +170,7 @@ header {
 }
 
 .hr {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   height: 1px;
   background-color: #212121;
 }
@@ -209,7 +209,7 @@ header {
 .first-work-card {
   display: flex;
   flex-direction: column;
-  background-image: url(./img/large-image.png);
+  background-image: url(./img/project-screenshot.png);
   background-repeat: no-repeat;
 }
 
@@ -219,7 +219,7 @@ header {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  margin-top: 85%;
+  margin-top: 135%;
   color: #091e42;
 }
 
@@ -257,6 +257,7 @@ header {
   padding-bottom: 0;
   color: #fff;
   margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .other-work-cards h2 {

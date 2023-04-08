@@ -1,9 +1,9 @@
 const projects = [
   {
     id: 1,
-    name: 'Multi Stories Post',
+    name: 'CodeHeros: Learn web development',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      'A software training school that offers free software development training and provides an excellent opportunity for individuals who want to learn programming skills without incurring any financial burden.',
     technology: ['html', 'Bootstrap', 'Ruby'],
     image: ['./img/large-image.png', './img/Icon.png'],
     liveVersion: './img/Icon-2.png',
@@ -91,7 +91,9 @@ projects.forEach((project, i) => {
             <li>${project.technology[1]}</li>
             <li>${project.technology[2]}</li>
           </ul>
-  <button class='btn-orange'>See projects</button>`;
+  
+  <a href='https://prius2055.github.io/learn-web-development/' target="_blank"><button class='btn-orange'>See project</button></a>
+          `;
   projectCards.appendChild(div);
 });
 
@@ -178,12 +180,14 @@ const form = document.querySelector('form');
 const email = document.querySelector('.input-email');
 const errorMsg = document.querySelector('.error');
 
-const emailPattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+const emailPattern =
+  /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 form.addEventListener('submit', (event) => {
   const isValid = email.value.length === 0 || emailPattern.test(email.value);
   if (!isValid) {
-    errorMsg.textContent = 'Your email address should all be in lower case. yourname@example.com';
+    errorMsg.textContent =
+      'Your email address should all be in lower case. yourname@example.com';
     errorMsg.className = 'error active';
     event.preventDefault();
   } else {
