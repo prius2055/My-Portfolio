@@ -209,12 +209,8 @@ header {
 .first-work-card {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-  background-image: url(./img/project-screenshot.png);
-=======
-  background-image: url(./img/large-image.jpg);
->>>>>>> fd7b7771c17d6f6c769a6ca4e415d3184e3fdca6
-  background-repeat: no-repeat;
+  /* background-image: url(./img/project-screenshot.png); */
+  /* background-repeat: no-repeat; */
 
   /* background-size: cover; */
 }
@@ -225,7 +221,7 @@ header {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  margin-top: 135%;
+  margin-top: 5%;
   color: #091e42;
 }
 
@@ -256,12 +252,12 @@ header {
 .other-work-cards {
   display: flex;
   flex-direction: column;
-  background-image: url(./img/work-card-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: url(./img/todo-app.png); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   padding-top: 85px;
   padding-bottom: 0;
-  color: #fff;
+  color: #000;
   margin-bottom: 5%;
   margin-top: 5%;
 }
@@ -290,14 +286,14 @@ header {
 
 .list-grey li {
   list-style: none;
-  color: white;
+  color: #091e42;
   background: rgba(255, 255, 255, 0.24);
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  border: 1px solid #ffffff3d;
+  border: 1px solid #8993a4;
   padding: 10px 12px;
   margin-right: 12px;
 }
@@ -404,6 +400,12 @@ header {
   flex-direction: column;
   justify-content: space-around;
   padding: 5%;
+  padding-bottom: 10%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 10;
+  margin: 20% 3% 10% 3%;
 }
 
 .modal-heading {
@@ -423,7 +425,7 @@ header {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 26px;
   line-height: 44px;
 }
 
@@ -494,13 +496,6 @@ header {
 
 .modal-container.active {
   display: block;
-  padding-bottom: 20%;
-  height: 100vh;
-  position: fixed;
-  top: -32%;
-  left: 0;
-  z-index: 10;
-  margin: 20% 3% 10% 3%;
 }
 
 .first-work-card ul li {

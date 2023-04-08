@@ -1,22 +1,22 @@
 const projects = [
   {
     id: 1,
-    name: 'CodeHeros: Learn web development',
+    name: 'CodeHeros: Learn Software development',
     description:
       'A software training school that offers free software development training and provides an excellent opportunity for individuals who want to learn programming skills without incurring any financial burden.',
-    technology: ['html', 'Bootstrap', 'Ruby'],
-    image: ['./img/large-image.png', './img/Icon.png'],
+    technology: ['html', 'Bootstrap', 'JavaScript', 'Github'],
+    image: ['./img/learn-web-dev.png'],
     liveVersion: './img/Icon-2.png',
     source: './img/github.png',
   },
 
   {
     id: 2,
-    name: 'Professional Art Printing data',
+    name: 'Interactive To-do list',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technology: ['html', 'Bootstrap', 'Ruby'],
-    image: ['./img/modal-hero.png', './img/Icon.png'],
+      'A interactive to-do app that helps individuals manage tasks and organize their work. It allows users to create new task,edit task, mark and delete all completed tasks.',
+    technology: ['CSS', 'JavaScript', 'Webpack', 'Jest', 'github workflow'],
+    image: ['./img/todo-app.png'],
     liveVersion: './img/Icon-2.png',
     source: './img/github.png',
   },
@@ -26,8 +26,8 @@ const projects = [
     name: 'Professional Art Printing data',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technology: ['html', 'Bootstrap', 'Ruby'],
-    image: ['./img/modal-hero.png', './img/Icon.png'],
+    technology: ['html', 'Bootstrap', 'Ruby', 'github'],
+    image: ['./img/modal-hero.png'],
     liveVersion: './img/Icon-2.png',
     source: './img/github.png',
   },
@@ -37,8 +37,8 @@ const projects = [
     name: 'Professional Art Printing data',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technology: ['html', 'Bootstrap', 'Ruby'],
-    image: ['./img/modal-hero.png', './img/Icon.png'],
+    technology: ['html', 'Bootstrap', 'Ruby', 'github'],
+    image: ['./img/modal-hero.png'],
     liveVersion: './img/Icon-2.png',
     source: './img/github.png',
   },
@@ -48,8 +48,8 @@ const projects = [
     name: 'Professional Art Printing data',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technology: ['html', 'Bootstrap', 'Ruby'],
-    image: ['./img/modal-hero.png', './img/Icon.png'],
+    technology: ['html', 'Bootstrap', 'Ruby', 'github'],
+    image: ['./img/modal-hero.png'],
     liveVersion: './img/Icon-2.png',
     source: './img/github.png',
   },
@@ -59,8 +59,8 @@ const projects = [
     name: 'Professional Art Printing data',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technology: ['html', 'Bootstrap', 'Ruby'],
-    image: ['./img/modal-hero.png', './img/Icon.png'],
+    technology: ['html', 'Bootstrap', 'Ruby', 'github'],
+    image: ['./img/modal-hero.png'],
     liveVersion: './img/Icon-2.png',
     source: './img/github.png',
   },
@@ -70,8 +70,8 @@ const projects = [
     name: 'Professional Art Printing data',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technology: ['html', 'Bootstrap', 'Ruby'],
-    image: ['./img/modal-hero.png', './img/Icon.png'],
+    technology: ['html', 'Bootstrap', 'Ruby', 'github'],
+    image: ['./img/modal-hero.png'],
     liveVersion: './img/Icon-2.png',
     source: './img/github.png',
   },
@@ -84,15 +84,17 @@ projects.forEach((project, i) => {
   const div = document.createElement('div');
   div.className = `${i === 0 ? 'first-work-card' : 'other-work-cards'}`;
   div.innerHTML = `
+  <img src=${project.image[0]} alt='project image'/>
           <h2>${project.name}</h2>
           <p>${project.description}</p>
           <ul class="list list-grey">
             <li>${project.technology[0]}</li>
             <li>${project.technology[1]}</li>
             <li>${project.technology[2]}</li>
+            <li>${project.technology[3]}</li>
           </ul>
   
-  <a href='https://prius2055.github.io/learn-web-development/' target="_blank"><button class='btn-orange'>See project</button></a>
+<button class='btn-orange'>See project</button>
           `;
   projectCards.appendChild(div);
 });
@@ -108,14 +110,15 @@ projectButtons.forEach((btn, j) => {
         const modal = ` <div class='modal'>
         <div class='modal-heading'>
           <h2>${project.name}</h2>
-          <img src='${project.image[1]}' alt='cancel image' class='modal-close' />
+          <img src='./img/Icon.png' alt='cancel image' class='modal-close' />
         </div>
         <ul class='modal-list'>
           <li>${project.technology[0]}</li>
           <li>${project.technology[1]}</li>
           <li>${project.technology[2]}</li>
+          <li>${project.technology[3]}</li>
         </ul>
-        <div class='modal-detail'><img src='${project.image[0]}' alt='modal hero image' />
+        <div class='modal-detail'><img src='${project.image}' alt='modal hero image' />
         <div class='modal-message'>
         <p>
         ${project.description}
