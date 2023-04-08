@@ -195,3 +195,30 @@ form.addEventListener('submit', (event) => {
     errorMsg.className = 'error';
   }
 });
+
+/* FORM STORAGE */
+
+const userInputs = [fullName, firstName, lastName, email, msg];
+
+function userData() {
+  const userObject = {
+    fullname: fullName.value,
+    firstname: firstName.value,
+    lastname: lastName.value,
+    email: email.value,
+    message: msg.value,
+  };
+  localStorage.setItem('user', JSON.stringify(userObject));
+}
+
+userInputs.forEach((input) => {
+  input.addEventListener('change', userData);
+  const parsedObject = JSON.parse(localStorage.getItem('user'));
+  if (parsedObject) {
+    fullName.value = parsedObject.fullname;
+    firstName.value = parsedObject.firstname;
+    lastName.value = parsedObject.lastName;
+    email.value = parsedObject.email;
+    msg.value = parsedObject.message;
+  }
+});

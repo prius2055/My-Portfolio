@@ -1,6 +1,5 @@
 <a name="readme-top"></a>
 
-
 <div align="center">
 
   <br/>
@@ -8,7 +7,6 @@
   <h3><b>README for Portfolio project</b></h3>
 
 </div>
-
 
 # 📗 Table of Contents
 
@@ -31,7 +29,6 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
-
 
 # 📖 [Portfolio project] <a name="about-project"></a>
 
@@ -73,7 +70,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://prius2055.github.io/Portfolio-project/)
+- [Live Demo Link](https://prius2055.github.io/My-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,14 +84,13 @@ To get a local copy up and running
 
 In order to run this project you need:
 
- npm
-
+npm
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-  git clone https://github.com/prius2055/Portfolio-project.git
+git clone https://github.com/prius2055/Portfolio-project.git
 
 ### Usage
 
@@ -102,9 +98,7 @@ To run the project, execute the following command:
 
 npm start
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -112,13 +106,12 @@ npm start
 
 👤 **Yacos(https://github.com/Yacoubou-seidou)**
 👤 **Samuel (https://github.com/yawsamcode)**
-👤 **BENSON  (https://github.com/Bennyjoez)**
+👤 **BENSON (https://github.com/Bennyjoez)**
 👤 **Umair (https://github.com/emhamza)**
 
 - GitHub: [@githubhandle](https://github.com/prius2055)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🔭 Future Features <a name="future-features"></a>
 
@@ -126,9 +119,7 @@ npm start
 
 - [ ] **[More styling to the UI]**
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -138,7 +129,6 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## ⭐️ Show your support <a name="support"></a>
 
 > Write a message to encourage readers to support your project
@@ -147,7 +137,6 @@ If you like this project please let us know how you would like us to improve it
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 > Give credit to everyone who inspired your codebase.
@@ -155,7 +144,6 @@ If you like this project please let us know how you would like us to improve it
 I would like to thank the Microverse team for their support
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 📝 License <a name="license"></a>
 
