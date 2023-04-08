@@ -70,7 +70,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://prius2055.github.io/Portfolio-project/)
+- [Live Demo Link](https://prius2055.github.io/My-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
