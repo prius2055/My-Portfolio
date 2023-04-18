@@ -5,9 +5,9 @@ const projects = [
     description:
       'A software training school that offers free software development training and provides an excellent opportunity for individuals who want to learn programming skills without incurring any financial burden.',
     technology: ['html', 'Bootstrap', 'JavaScript', 'Github'],
-    image: ['../img/learn-web-dev.png', '../img/learn-web-dev-2.png'],
-    liveVersion: '../img/Icon-2.png',
-    source: '../img/github.png',
+    image: ['./img/learn-web-dev.png', './img/learn-web-dev-2.png'],
+    liveVersion: './img/Icon-2.png',
+    source: './img/github.png',
   },
 
   {
@@ -16,9 +16,9 @@ const projects = [
     description:
       'An interactive to-do app that helps individuals organize their work.',
     technology: ['CSS', 'JavaScript', 'Webpack', 'Jest', 'github workflow'],
-    image: ['../img/todo-app.png', '../img/todo-app.png'],
-    liveVersion: '../img/Icon-2.png',
-    source: '../img/github.png',
+    image: ['./img/todo-app.png', './img/todo-app.png'],
+    liveVersion: './img/Icon-2.png',
+    source: './img/github.png',
   },
 
   {
@@ -27,9 +27,9 @@ const projects = [
     description:
       'A leaderboard that allows users POST and GET information from a RESTAPI.',
     technology: ['JavaScript', 'Webpack', 'Gitflow', 'RESTAPI'],
-    image: ['../img/leaderboard.png', '../img/leaderboard.png'],
-    liveVersion: '../img/Icon-2.png',
-    source: '../img/github.png',
+    image: ['./img/leaderboard.png', './img/leaderboard.png'],
+    liveVersion: './img/Icon-2.png',
+    source: './img/github.png',
   },
 
   {
@@ -37,9 +37,9 @@ const projects = [
     name: 'Professional Art',
     description: 'Lorem Ipsum is simply dummy text of the printing ',
     technology: ['html', 'Bootstrap', 'Ruby', 'github'],
-    image: ['../img/modal-hero.png', '../img/modal-hero.png'],
-    liveVersion: '../img/Icon-2.png',
-    source: '../img/github.png',
+    image: ['./img/modal-hero.png', './img/modal-hero.png'],
+    liveVersion: './img/Icon-2.png',
+    source: './img/github.png',
   },
 
   {
@@ -47,9 +47,9 @@ const projects = [
     name: 'Professional Art Printing data',
     description: 'Lorem Ipsum is simply dummy text of the printing and ',
     technology: ['html', 'Bootstrap', 'Ruby', 'github'],
-    image: ['../img/modal-hero.png', '../img/modal-hero.png'],
-    liveVersion: '../img/Icon-2.png',
-    source: '../img/github.png',
+    image: ['./img/modal-hero.png', './img/modal-hero.png'],
+    liveVersion: './img/Icon-2.png',
+    source: './img/github.png',
   },
 
   {
@@ -69,9 +69,9 @@ const projects = [
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
     technology: ['html', 'Bootstrap', 'Ruby', 'github'],
-    image: ['../img/modal-hero.png', '../img/modal-hero.png'],
-    liveVersion: '../img/Icon-2.png',
-    source: '../img/github.png',
+    image: ['./img/modal-hero.png', './img/modal-hero.png'],
+    liveVersion: './img/Icon-2.png',
+    source: './img/github.png',
   },
 ];
 
