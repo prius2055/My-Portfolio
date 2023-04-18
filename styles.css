@@ -97,7 +97,7 @@ header {
 .hero-section {
   background-color: #1c1a19;
   padding: 120px 24px 120px 24px;
-  background-image: url('Images/Hero.png');
+  background-image: url('./images/Hero.png');
   background-repeat: no-repeat;
   background-size: 55%;
   background-position: right -5% bottom -155%;
