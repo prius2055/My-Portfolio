@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay"></div>
+      <header>
+        <a href="#" class="logo">Prince Nwuke</a>
+        <nav>
+          <div class="hamburger">
+            <img
+              src="../img/horizontal-line-1.png"
+              alt="Hamburger button"
+              class="nav-line-1"
+            />
+            <img
+              src="../img/horizontal-line-2.png"
+              alt="Hamburger button"
+              class="nav-line-2"
+            />
+            <img
+              src="../img/horizontal-line-3.png"
+              alt="Hamburger button"
+              class="nav-line-3"
+            />
+          </div>
+
+          <ul class="mobile-nav">
+            <li class="nav-list">
+              <a href="#works-section" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-list">
+              <a href="#about-section" class="nav-link">About</a>
+            </li>
+            <li class="nav-list">
+              <a href="#form_section" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="desktop-nav">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="#"><img src="../icons/envelope.png" alt="message" /></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-container">
+        <section class="hero-section">
+          <div class="hero-section-greet">
+            <h1>Hey There. I’m Prince</h1>
+            <h2>I'm a software developer</h2>
+            <p>
+              I can help you build a product , feature or website. Look through
+              some of my work and experience!
+            </p>
+            <p>
+              I also voluteer as a community manager and part-time Teaching
+              Assistant at LHI software development school, where I teach HTML,
+              CSS, JavaScript and React!
+            </p>
+            <p>I am open to new opportunities!</p>
+          </div>
+          <ul class="hero-section-icons">
+            <li>
+              <a href="https://github.com/prius2055" target="_blank"
+                ><img src="../icons/github.png" alt="github icon"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/prince-nwuke-69142a227/"
+                target="_blank"
+                ><img src="../icons/linkedin.png" alt="linkedin icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="../icons/angel-list.png" alt="angel list icon"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Prius2055" target="_blank"
+                ><img src="../icons/twitter.png" alt="twitter icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="../icons/medium.png" alt="medium icon"
+              /></a>
+            </li>
+          </ul>
+        </section>
+
+        <section id="works-section">
+          <div class="works-section-header">
+            <h1>My Recent Works</h1>
+            <div class="hr"></div>
+          </div>
+          <div class="work-cards"></div>
+        </section>
+
+        <section id="about-section">
+          <div class="about-section-header">
+            <h1>About me</h1>
+            <p>
+              Hello I’m a software developer! I can help you build a product ,
+              feature or website Look through some of my work and experience! If
+              you like what you see and have a project you need coded, don’t
+              hestiate to contact me.
+            </p>
+            <button class="btn-orange btn-about">Get My Resume</button>
+          </div>
+
+          <div class="about-horizontal"></div>
+
+          <div class="about-section-skills">
+            <ul class="skills-card">
+              <li class="skills-header">
+                <img src="../img/hex.png" alt="hexagon icon" />
+                <h2>Languages</h2>
+              </li>
+              <li>Javascript</li>
+              <li>Ruby</li>
+              <li>Html</li>
+              <li>Css</li>
+            </ul>
+
+            <ul class="skills-card">
+              <li class="skills-header">
+                <img src="../img/Rec.png" alt="Rectangle icon" />
+                <h2>Frameworks</h2>
+              </li>
+              <li>React</li>
+              <li>Ruby on Rails</li>
+              <li>RSPec</li>
+              <li>CapyBara</li>
+              <li>Selenium</li>
+              <li>Bootstrap</li>
+            </ul>
+
+            <ul class="skills-card">
+              <li class="skills-header">
+                <img src="../img/circle.png" alt="circular icon" />
+                <h2>Skills</h2>
+              </li>
+              <li>Github</li>
+              <li>ES6 Modules</li>
+              <li>Webpack</li>
+              <li>Gitflow</li>
+              <li>Linting</li>
+              <li>Jest test</li>
+              <li>Terminal</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="form_section">
+          <div class="form">
+            <p>
+              I'm always interested in hearing about new projects, so if you'd
+              like to chat please get in touch.
+            </p>
+            <form
+              id="form"
+              class="form_element"
+              action="https://formspree.io/f/xjvdwjpe"
+              method="post"
+            >
+              <input
+                id="fuName"
+                type="text"
+                placeholder="Full Name"
+                name="full name"
+                maxlength="30"
+                class="input-fullname"
+              />
+
+              <input
+                id="fName"
+                type="text"
+                placeholder="First Name"
+                name="first name"
+                maxlength="30"
+                class="input-name"
+              />
+
+              <input
+                id="lName"
+                type="text"
+                placeholder="Last Name"
+                name="last name"
+                maxlength="30"
+                class="input-name"
+              />
+
+              <input
+                type="email"
+                placeholder="Email address"
+                required
+                name="email"
+                class="input-email"
+                title="Your email address should be lower case"
+              />
+
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Enter text here"
+                maxlength="500"
+                cols="30"
+                rows="5"
+              ></textarea>
+              <div class="btn-form-container">
+                <button class="btn-form" type="submit">Get in touch</button>
+                <span class="error" aria-live="polite">Ih</span>
+              </div>
+            </form>
+          </div>
+
+          <div class="line"></div>
+          <ul class="hero-section-icons icon-desktop" id="bottom-social">
+            <li>
+              <a href="https://github.com/prius2055" target="_blank"
+                ><img src="../icons/dark-github-icon.png" alt="github icon"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/prince-nwuke-69142a227/" target="_blank"
+                ><img src="../icons/dark-linkedin-icon.png" alt="linkedin icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="../icons/dark-angel-icon.png" alt="angel list icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="../icons/dark-twitter-icon.png" alt="twitter icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../icons/dark-medium-icon.png" alt="medium icon"
+              /></a>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <hr class="bottom_line" />
+
+      <!-- Mobile popup goes here -->
+      <div class="modal-container"></div>
+    </div>
+
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
+</html>
