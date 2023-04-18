@@ -4,7 +4,7 @@
   "description": "<a name=\"readme-top\"></a>",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
@@ -13,10 +13,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://prius2055.io/my-portfolio",
   "bugs": {
     "url": "https://github.com/prius2055/Portfolio-project/issues"
   },
-  "homepage": "https://github.com/prius2055/Portfolio-project#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
@@ -218,6 +218,7 @@
     "get-stream": "^5.2.0",
     "get-symbol-description": "^1.0.0",
     "get-uri": "^3.0.2",
+    "gh-pages": "^5.0.0",
     "glob": "^8.1.0",
     "glob-parent": "^5.1.2",
     "global-dirs": "^3.0.1",

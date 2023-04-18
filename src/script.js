@@ -5,75 +5,73 @@ const projects = [
     description:
       'A software training school that offers free software development training and provides an excellent opportunity for individuals who want to learn programming skills without incurring any financial burden.',
     technology: ['html', 'Bootstrap', 'JavaScript', 'Github'],
-    image: ['./img/learn-web-dev.png'],
-    liveVersion: './img/Icon-2.png',
-    source: './img/github.png',
+    image: ['../img/learn-web-dev.png', '../img/learn-web-dev-2.png'],
+    liveVersion: '../img/Icon-2.png',
+    source: '../img/github.png',
   },
 
   {
     id: 2,
     name: 'Interactive To-do list',
     description:
-      'A interactive to-do app that helps individuals manage tasks and organize their work. It allows users to create new task,edit task, mark and delete all completed tasks.',
+      'An interactive to-do app that helps individuals organize their work.',
     technology: ['CSS', 'JavaScript', 'Webpack', 'Jest', 'github workflow'],
-    image: ['./img/todo-app.png'],
-    liveVersion: './img/Icon-2.png',
-    source: './img/github.png',
+    image: ['../img/todo-app.png', '../img/todo-app.png'],
+    liveVersion: '../img/Icon-2.png',
+    source: '../img/github.png',
   },
 
   {
     id: 3,
-    name: 'Professional Art Printing data',
+    name: 'Leaderboard',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technology: ['html', 'Bootstrap', 'Ruby', 'github'],
-    image: ['./img/modal-hero.png'],
-    liveVersion: './img/Icon-2.png',
-    source: './img/github.png',
+      'A leaderboard that allows users POST and GET information from a RESTAPI.',
+    technology: ['JavaScript', 'Webpack', 'Gitflow', 'RESTAPI'],
+    image: ['../img/leaderboard.png', '../img/leaderboard.png'],
+    liveVersion: '../img/Icon-2.png',
+    source: '../img/github.png',
   },
 
   {
     id: 4,
-    name: 'Professional Art Printing data',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    name: 'Professional Art',
+    description: 'Lorem Ipsum is simply dummy text of the printing ',
     technology: ['html', 'Bootstrap', 'Ruby', 'github'],
-    image: ['./img/modal-hero.png'],
-    liveVersion: './img/Icon-2.png',
-    source: './img/github.png',
+    image: ['../img/modal-hero.png', '../img/modal-hero.png'],
+    liveVersion: '../img/Icon-2.png',
+    source: '../img/github.png',
   },
 
   {
     id: 5,
     name: 'Professional Art Printing data',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and ',
     technology: ['html', 'Bootstrap', 'Ruby', 'github'],
-    image: ['./img/modal-hero.png'],
-    liveVersion: './img/Icon-2.png',
-    source: './img/github.png',
+    image: ['../img/modal-hero.png', '../img/modal-hero.png'],
+    liveVersion: '../img/Icon-2.png',
+    source: '../img/github.png',
   },
 
   {
     id: 6,
     name: 'Professional Art Printing data',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
     technology: ['html', 'Bootstrap', 'Ruby', 'github'],
-    image: ['./img/modal-hero.png'],
-    liveVersion: './img/Icon-2.png',
-    source: './img/github.png',
+    image: ['../img/modal-hero.png', '../img/modal-hero.png'],
+    liveVersion: '../img/Icon-2.png',
+    source: '../img/github.png',
   },
 
   {
     id: 7,
     name: 'Professional Art Printing data',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
     technology: ['html', 'Bootstrap', 'Ruby', 'github'],
-    image: ['./img/modal-hero.png'],
-    liveVersion: './img/Icon-2.png',
-    source: './img/github.png',
+    image: ['../img/modal-hero.png', '../img/modal-hero.png'],
+    liveVersion: '../img/Icon-2.png',
+    source: '../img/github.png',
   },
 ];
 
@@ -84,7 +82,10 @@ projects.forEach((project, i) => {
   const div = document.createElement('div');
   div.className = `${i === 0 ? 'first-work-card' : 'other-work-cards'}`;
   div.innerHTML = `
-  <img src=${project.image[0]} alt='project image'/>
+  <img src=${
+    window.innerWidth < 768 ? project.image[0] : project.image[1]
+  } alt='project image'/>
+  <div class='work-notes'>
           <h2>${project.name}</h2>
           <p>${project.description}</p>
           <ul class="list list-grey">
@@ -95,6 +96,7 @@ projects.forEach((project, i) => {
           </ul>
   
 <button class='btn-orange'>See project</button>
+</div>
           `;
   projectCards.appendChild(div);
 });

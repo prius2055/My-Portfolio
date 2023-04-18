@@ -209,10 +209,7 @@ header {
 .first-work-card {
   display: flex;
   flex-direction: column;
-  /* background-image: url(./img/project-screenshot.png); */
-  /* background-repeat: no-repeat; */
-
-  /* background-size: cover; */
+  margin-bottom: 20%;
 }
 
 .first-work-card h2 {
@@ -252,14 +249,20 @@ header {
 .other-work-cards {
   display: flex;
   flex-direction: column;
-  /* background-image: url(./img/todo-app.png); */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  padding-top: 85px;
   padding-bottom: 0;
   color: #000;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  margin-bottom: 10%;
+  border: 2px #ccc solid;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.other-work-cards img {
+  height: 300px;
+}
+
+.work-notes {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .other-work-cards h2 {
@@ -268,9 +271,10 @@ header {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #fff;
+  color: #1c1a19;
   padding-left: 16px;
   padding-right: 16px;
+  margin-top: 2%;
 }
 
 .other-work-cards p {
@@ -596,10 +600,6 @@ header {
   margin-top: 0;
 }
 
-/* .btn-form-container span {
-  background-color: blue;
-} */
-
 .btn-form {
   width: 50%;
   place-self: center;
@@ -796,23 +796,25 @@ header {
   }
 
   .first-work-card {
-    background-image: url(./img/large-image-2.png);
-    background-size: cover;
-    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20%;
+  }
+
+  .first-work-card .work-notes {
+    margin-left: 5%;
   }
 
   .first-work-card h2 {
     margin-top: 0;
-    margin-left: 55%;
+  }
+
+  .first-work-card img {
+    width: 50%;
   }
 
   .first-work-card p {
-    margin-left: 55%;
     margin-top: 0;
-  }
-
-  .first-work-card ul {
-    margin-left: 55%;
   }
 
   .works-section-header h1 {
@@ -893,7 +895,6 @@ header {
 
   .first-work-card .btn-orange {
     width: 25%;
-    margin-left: 55%;
   }
 
   .btn-orange:hover {
@@ -936,8 +937,6 @@ header {
   }
 
   .list-grey li {
-    background: rgba(255, 255, 255, 0.24);
-    border: 1px solid #ffffff3d;
     padding: 2% 4%;
     margin-right: 2%;
   }
