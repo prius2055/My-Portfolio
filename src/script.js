@@ -80,7 +80,7 @@ const modalContainer = document.querySelector('.modal-container');
 
 projects.forEach((project, i) => {
   const div = document.createElement('div');
-  div.className = `${i === 0 ? 'first-work-card' : 'other-work-cards'}`;
+  div.className = 'work-card';
   div.innerHTML = `
   <img src=${
     window.innerWidth < 768 ? project.image[0] : project.image[1]

@@ -1,3 +1,12 @@
+/* 
+ background-color: #3c3a39;
+colors: #3c3a39;
+
+
+
+
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +16,7 @@
 body {
   font-family: 'Crete Round', 'Poppins', 'Roboto', 'inter', sans-serif;
   color: #fff;
+  width: 100%;
 }
 
 .container {
@@ -94,25 +104,80 @@ header {
   display: none;
 }
 
-.hero-section {
-  background-color: #1c1a19;
-  padding: 120px 24px 120px 24px;
-  background-image: url(./images/Hero.png);
+#hero-section {
+  /* background-color: #1c1a19; */
+  background-color: #3c3a39;
+  padding: 120px 24px;
+  /* background-image: url(./images/Hero.png); */
   background-repeat: no-repeat;
   background-size: 55%;
   background-position: right -5% bottom -155%;
-  height: 590px;
+  height: 100vh;
 }
 
-.hero-section-greet h1 {
-  font-family: 'Crete Round', sans-serif;
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 64px;
-  letter-spacing: 0.37px;
-  text-align: left;
+.photo-img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.typewriter {
+  width: 60%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.typewriter h1 {
   color: #ff6b00;
-  margin-bottom: 12px;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 50px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.1em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* line-height: 60px; */
+  text-align: left;
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ff6b00;
+  }
+}
+
+.hero-section-greet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.hero-section-paragraph {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px 0px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px 0px;
+  border-radius: 10px;
+  padding: 5%;
+  font-style: oblique;
+  line-height: 24px;
+  font-weight: 200;
+  margin-left: 1%;
 }
 
 .hero-section-greet h2 {
@@ -125,11 +190,6 @@ header {
 }
 
 .hero-section-greet p {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   margin-bottom: 24px;
 }
 
@@ -151,12 +211,14 @@ header {
 }
 
 #works-section {
-  margin: 120px 24px 0 24px;
+  padding: 5% 10%;
+  color: #3c3a39;
 }
 
 .works-section-header {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5%;
 }
 
 .works-section-header h1 {
@@ -165,8 +227,6 @@ header {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  color: #1c1a19;
-  margin-bottom: 24px;
 }
 
 .hr {
@@ -206,13 +266,13 @@ header {
   margin: 0;
 }
 
-.first-work-card {
+/* .first-work-card {
   display: flex;
   flex-direction: column;
   margin-bottom: 20%;
-}
+} */
 
-.first-work-card h2 {
+/* .first-work-card h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -220,9 +280,9 @@ header {
   line-height: 44px;
   margin-top: 5%;
   color: #091e42;
-}
+} */
 
-.first-work-card p {
+/* .first-work-card p {
   margin-bottom: 12px;
   color: #1c1a19;
   font-family: 'Inter', sans-serif;
@@ -231,24 +291,24 @@ header {
   font-size: 16px;
   line-height: 24px;
   margin-top: 3%;
-}
+} */
 
-.first-work-card ul {
+/* .first-work-card ul {
   padding-left: 0;
-}
+} */
 
-.first-work-card .btn-orange {
+/* .first-work-card .btn-orange {
   width: 50%;
-}
+} */
 
 .work-cards {
   display: flex;
   flex-direction: column;
 }
 
-.other-work-cards {
+.work-card {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   padding-bottom: 0;
   color: #000;
   margin-bottom: 10%;
@@ -256,7 +316,7 @@ header {
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.other-work-cards img {
+.work-cards img {
   height: 300px;
 }
 
@@ -265,7 +325,7 @@ header {
   padding-bottom: 0;
 }
 
-.other-work-cards h2 {
+.work-card h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -277,7 +337,7 @@ header {
   margin-top: 2%;
 }
 
-.other-work-cards p {
+.work-card p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -502,7 +562,7 @@ header {
   display: block;
 }
 
-.first-work-card ul li {
+/* .first-work-card ul li {
   list-style: none;
   color: #091e42;
   background-color: white;
@@ -514,7 +574,7 @@ header {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-}
+} */
 
 .hamburger.active img:nth-child(1) {
   transform: translateY(3px) rotate(45deg);
@@ -683,16 +743,27 @@ header {
   }
 
   header {
-    padding: 26px 120px;
+    padding: 10px 120px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
   }
 
   .hero-section-icons li {
     margin-bottom: 50%;
   }
 
+  .desktop-nav img {
+    height: 18px;
+    width: 20px;
+  }
+
   .desktop-nav li a {
     text-decoration: none;
     color: #fff;
+    font-size: 16px;
+    font-weight: 300;
   }
 
   .logo {
@@ -701,8 +772,8 @@ header {
     line-height: 20px;
   }
 
-  .hero-section {
-    background-image: url(./icons/hero-desktop.png);
+  #hero-section {
+    /* background-image: url(./icons/hero-desktop.png); */
     background-size: contain;
     background-position: right -25% top 0%;
     display: flex;
@@ -722,14 +793,16 @@ header {
   }
 
   .hero-section-greet {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 2%;
-    width: 60%;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center;
+    padding-left: 2%; */
+    /* width: 60%; */
   }
 
-  .hero-section-greet h1 {
+  /* DEMO-SPECIFIC STYLES */
+
+  /* .hero-section-greet h1 {
     font-size: 72px;
     line-height: 82px;
     letter-spacing: 0.3px;
@@ -737,9 +810,9 @@ header {
     animation-name: grow;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-  }
+  } */
 
-  @keyframes grow {
+  /* @keyframes grow {
     0% {
       transform: scaleY(1);
     }
@@ -759,7 +832,7 @@ header {
     100% {
       transform: scaleY(1);
     }
-  }
+  } */
 
   .hero-section-greet h2 {
     font-family: 'Inter', sans-serif;
@@ -776,49 +849,49 @@ header {
   }
 
   /* WORKS SECTION */
-  #works-section {
+  /* #works-section {
     margin: 10% 5%;
-  }
+  } */
 
-  .works-section-header {
+  /* .works-section-header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 10%;
-  }
+  } */
 
-  .work-cards {
+  /* .work-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
+  } */
 
-  .first-work-card {
+  /* .first-work-card {
     display: flex;
     flex-direction: row;
     margin-bottom: 20%;
-  }
+  } */
 
-  .first-work-card .work-notes {
+  /* .first-work-card .work-notes {
     margin-left: 5%;
-  }
+  } */
 
-  .first-work-card h2 {
+  /* .first-work-card h2 {
     margin-top: 0;
-  }
+  } */
 
-  .first-work-card img {
+  /* .first-work-card img {
     width: 50%;
-  }
+  } */
 
-  .first-work-card p {
+  /* .first-work-card p {
     margin-top: 0;
-  }
+  } */
 
   .works-section-header h1 {
-    color: #091e42;
+    /* color: #091e42; */
     width: auto;
     text-align: start;
     align-self: center;
@@ -893,9 +966,9 @@ header {
     line-height: 22px;
   }
 
-  .first-work-card .btn-orange {
+  /* .first-work-card .btn-orange {
     width: 25%;
-  }
+  } */
 
   .btn-orange:hover {
     letter-spacing: 0.03em;
@@ -912,8 +985,8 @@ header {
 
   .work-card {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     cursor: pointer;
     transition: 1s;
   }
@@ -923,12 +996,12 @@ header {
     box-shadow: 0 -1px 7px 4px rgba(0, 0, 0, 60%);
   }
 
-  .other-work-cards {
+  .work-card {
     margin-bottom: 3%;
-    width: 32%;
+    /* width: 32%; */
   }
 
-  .other-work-cards .btn-orange {
+  .work-card .btn-orange {
     width: 100%;
   }
 
@@ -1166,13 +1239,13 @@ header {
 /* DESKTOP 2 */
 
 @media screen and (min-width: 1020px) {
-  .hero-section {
+  #hero-section {
     background-position: right 0% top 0%;
   }
 
-  .first-work-card {
+  /* .first-work-card {
     background-size: 50%;
-  }
+  } */
 
   #about-section {
     background-position: right -20% bottom 85%;
@@ -1182,9 +1255,9 @@ header {
 /* DESKTOP 3 */
 
 @media screen and (min-width: 1200px) {
-  .first-work-card {
+  /* .first-work-card {
     background-size: 30%;
-  }
+  } */
 }
 
 /* This is the style of our error messages */
