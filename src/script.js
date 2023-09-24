@@ -1,77 +1,67 @@
 const projects = [
   {
     id: 1,
-    name: 'CodeHeros: Learn Software development',
+    name: 'spaceX',
     description:
-      'A software training school that offers free software development training and provides an excellent opportunity for individuals who want to learn programming skills without incurring any financial burden.',
-    technology: ['html', 'Bootstrap', 'JavaScript', 'Github'],
-    image: ['./img/learn-web-dev.png', './img/learn-web-dev-2.png'],
+      'A mission to space app that utilizes the space API, allowing users to book reservations for a journey to  space.',
+    technology: ['React', 'Redux', 'API', 'CSS', 'Axios'],
+    image: './img/spaceX.png',
     liveVersion: './img/Icon-2.png',
     source: './img/github.png',
+    liveDemo: 'https://spacex-mv.netlify.app/',
+    sourceCode: 'https://github.com/abeltsew/spacex',
   },
 
   {
     id: 2,
-    name: 'Interactive To-do list',
+    name: 'BudgIT',
     description:
-      'An interactive to-do app that helps individuals organize their work.',
-    technology: ['CSS', 'JavaScript', 'Webpack', 'Jest', 'github workflow'],
-    image: ['./img/todo-app.png', './img/todo-app.png'],
+      'An interactive budget app that helps individuals plan and track their expenses and expenditures',
+    technology: ['CSS', 'JavaScript', 'Ruby', 'Shell', 'Rails'],
+    image: './img/BudgIT.png',
     liveVersion: './img/Icon-2.png',
     source: './img/github.png',
+    liveDemo: 'https://budgit.onrender.com/',
+    sourceCode: 'https://github.com/prius2055/rails-budget-app',
   },
 
   {
     id: 3,
-    name: 'Leaderboard',
+    name: 'CodeHeros: Learn Software development',
     description:
-      'A leaderboard that allows users POST and GET information from a RESTAPI.',
-    technology: ['JavaScript', 'Webpack', 'Gitflow', 'RESTAPI'],
-    image: ['./img/leaderboard.png', './img/leaderboard.png'],
+      'A software training school that offers free software development training and provides an excellent opportunity for individuals who want to learn programming skills without incurring any financial burden.',
+    technology: ['html', 'Bootstrap', 'JavaScript', 'Github'],
+    image: './img/codeheros.png',
     liveVersion: './img/Icon-2.png',
     source: './img/github.png',
+    liveDemo: 'https://prius2055.github.io/learn-web-development/',
+    sourceCode: 'https://github.com/prius2055/learn-web-development',
   },
 
   {
     id: 4,
-    name: 'Professional Art',
-    description: 'Lorem Ipsum is simply dummy text of the printing ',
-    technology: ['html', 'Bootstrap', 'Ruby', 'github'],
-    image: ['./img/modal-hero.png', './img/modal-hero.png'],
+    name: 'Leaderboard',
+    description:
+      'A leaderboard that allows users POST and GET scores from a RESTAPI. It can be used to display latest scores update in sporting events',
+    technology: ['JavaScript', 'Webpack', 'Gitflow', 'RESTAPI'],
+    image: './img/leaderboard.png',
     liveVersion: './img/Icon-2.png',
     source: './img/github.png',
+    liveDemo: 'https://prius2055.github.io/leaderboard-project/',
+    sourceCode: 'https://github.com/prius2055/leaderboard-project',
   },
 
   {
     id: 5,
-    name: 'Professional Art Printing data',
-    description: 'Lorem Ipsum is simply dummy text of the printing and ',
-    technology: ['html', 'Bootstrap', 'Ruby', 'github'],
-    image: ['./img/modal-hero.png', './img/modal-hero.png'],
-    liveVersion: './img/Icon-2.png',
-    source: './img/github.png',
-  },
-
-  {
-    id: 6,
-    name: 'Professional Art Printing data',
+    name: 'Currency exchanger',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
-    technology: ['html', 'Bootstrap', 'Ruby', 'github'],
-    image: ['./img/modal-hero.png', './img/modal-hero.png'],
+      'This is a currency exchage app. Users can check exchange rate of most world currencies against a base currency ',
+    technology: ['React', 'Redux', 'API', 'github'],
+    image: './img/currency-exchange.png',
     liveVersion: './img/Icon-2.png',
     source: './img/github.png',
-  },
-
-  {
-    id: 7,
-    name: 'Professional Art Printing data',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
-    technology: ['html', 'Bootstrap', 'Ruby', 'github'],
-    image: ['./img/modal-hero.png', './img/modal-hero.png'],
-    liveVersion: './img/Icon-2.png',
-    source: './img/github.png',
+    liveDemo: 'https://currency-exchange-app.onrender.com/',
+    sourceCode: 'https://github.com/prius2055/Currency-Exchange-app',
   },
 ];
 
@@ -80,11 +70,9 @@ const modalContainer = document.querySelector('.modal-container');
 
 projects.forEach((project, i) => {
   const div = document.createElement('div');
-  div.className = `${i === 0 ? 'first-work-card' : 'other-work-cards'}`;
+  div.className = 'work-card';
   div.innerHTML = `
-  <img src=${
-    window.innerWidth < 768 ? project.image[0] : project.image[1]
-  } alt='project image'/>
+  <img src=${project.image} alt='project image' class='work-img id='work-img/>
   <div class='work-notes'>
           <h2>${project.name}</h2>
           <p>${project.description}</p>
@@ -101,12 +89,81 @@ projects.forEach((project, i) => {
   projectCards.appendChild(div);
 });
 
+//Handle scroll animation
+const workCards = document.querySelectorAll('.work-card');
+const workImages = document.querySelectorAll('.work-img');
+const workNotes = document.querySelectorAll('.work-notes');
+
+const aboutParagraphs = document.querySelector('.about-paragraphs');
+
+const techSkills = document.querySelectorAll('.tech-skills');
+
+const objectInView = (card, percentageScroll = 100) => {
+  const cardTop = card.getBoundingClientRect().top;
+  return (
+    cardTop <=
+    (window.innerHeight || document.documentElement.clientHeight) *
+      (percentageScroll / 100)
+  );
+};
+
+const objectOutOfView = (card) => {
+  const elementTop = card.getBoundingClientRect().top;
+  return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+  );
+};
+
+const handleScrollAnimation = () => {
+  workImages.forEach((image) => {
+    if (objectInView(image, 65)) {
+      image.classList.add('scrolled');
+    } else if (objectOutOfView(image)) {
+      image.classList.remove('scrolled');
+    }
+  });
+
+  workNotes.forEach((note) => {
+    if (objectInView(note, 65)) {
+      note.classList.add('scrolled');
+    } else if (objectOutOfView(note)) {
+      note.classList.remove('scrolled');
+    }
+  });
+
+  workCards.forEach((work) => {
+    if (objectInView(work, 65)) {
+      work.classList.add('scrolled');
+    } else if (objectOutOfView(work)) {
+      work.classList.remove('scrolled');
+    }
+  });
+
+  if (objectInView(aboutParagraphs, 65)) {
+    aboutParagraphs.classList.add('scrolled');
+  } else if (objectOutOfView(aboutParagraphs)) {
+    aboutParagraphs.classList.remove('scrolled');
+  }
+
+  techSkills.forEach((skill) => {
+    if (objectInView(skill, 65)) {
+      skill.classList.add('scrolled');
+    } else if (objectOutOfView(skill)) {
+      skill.classList.remove('scrolled');
+    }
+  });
+};
+
+window.addEventListener('scroll', () => {
+  handleScrollAnimation();
+});
+
 /* The modal */
 const projectButtons = document.querySelectorAll('.btn-orange');
 const modalOverlay = document.querySelector('.overlay');
 
 projectButtons.forEach((btn, j) => {
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', (e) => {
     projects.forEach((project, i) => {
       if (j === i) {
         const modal = ` <div class='modal'>
@@ -121,23 +178,24 @@ projectButtons.forEach((btn, j) => {
           <li>${project.technology[3]}</li>
         </ul>
         <div class='modal-detail'><img src='${project.image}' alt='modal hero image' />
-        <div class='modal-message'>
-        <p>
-        ${project.description}
-       </p>
-       <div class='modal-buttons'>
-         <button class='btn-modal'>
+          <div class='modal-message'>
+           <p>
+            ${project.description}
+           </p>
+           <div class='modal-buttons'>
+           <a href ='${project.liveDemo}' target = '_blank' class='btn-modal'>
            <span>See Live</span
            ><img src='${project.liveVersion}' alt='share button' />
-         </button>
-         <button class='btn-modal'>
+           </a>
+           <a href ='${project.sourceCode}' target = '_blank' class='btn-modal'>
            <span>See Source</span
            ><img src='${project.source}' alt='share button' />
-         </button></div>
-        
+           </a>
           </div>
+        
         </div>
-      </div>`;
+        </div>
+       </div>`;
         modalContainer.innerHTML = modal;
         document.body.append(modalContainer);
       }
@@ -154,6 +212,8 @@ projectButtons.forEach((btn, j) => {
   });
 });
 
+const header = document.querySelector('.header');
+const navBar = document.querySelector('.navBar');
 const mobileNav = document.querySelector('.mobile-nav');
 const hamburger = document.querySelector('.hamburger');
 const mobileNavLogo = document.querySelector('.logo');
@@ -162,6 +222,8 @@ const mainContainer = document.querySelector('.main-container');
 const bottomLine = document.querySelector('.bottom_line');
 
 hamburger.addEventListener('click', () => {
+  header.classList.toggle('active');
+  navBar.classList.toggle('active');
   hamburger.classList.toggle('active');
   mobileNav.classList.toggle('active');
   mobileNavLogo.classList.toggle('active');
@@ -171,59 +233,12 @@ hamburger.addEventListener('click', () => {
 
 mobileNavLink.forEach((nav) => {
   nav.addEventListener('click', () => {
+    header.classList.toggle('active');
+    navBar.classList.toggle('active');
     mobileNav.classList.toggle('active');
     hamburger.classList.toggle('active');
     mobileNavLogo.classList.toggle('active');
     mainContainer.classList.toggle('active');
     bottomLine.classList.toggle('active');
   });
-});
-
-/* form validation */
-
-const form = document.querySelector('form');
-const email = document.querySelector('.input-email');
-const errorMsg = document.querySelector('.error');
-
-const emailPattern =
-  /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-form.addEventListener('submit', (event) => {
-  const isValid = email.value.length === 0 || emailPattern.test(email.value);
-  if (!isValid) {
-    errorMsg.textContent =
-      'Your email address should all be in lower case. yourname@example.com';
-    errorMsg.className = 'error active';
-    event.preventDefault();
-  } else {
-    errorMsg.textContent = '';
-    errorMsg.className = 'error';
-  }
-});
-
-/* FORM STORAGE */
-
-const userInputs = [fullName, firstName, lastName, email, msg];
-
-function userData() {
-  const userObject = {
-    fullname: fullName.value,
-    firstname: firstName.value,
-    lastname: lastName.value,
-    email: email.value,
-    message: msg.value,
-  };
-  localStorage.setItem('user', JSON.stringify(userObject));
-}
-
-userInputs.forEach((input) => {
-  input.addEventListener('change', userData);
-  const parsedObject = JSON.parse(localStorage.getItem('user'));
-  if (parsedObject) {
-    fullName.value = parsedObject.fullname;
-    firstName.value = parsedObject.firstname;
-    lastName.value = parsedObject.lastName;
-    email.value = parsedObject.email;
-    msg.value = parsedObject.message;
-  }
 });
