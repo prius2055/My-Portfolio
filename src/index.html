@@ -17,11 +17,11 @@
   <body>
     <div class="container">
       <div class="overlay"></div>
-      <header>
-        <a href="#" class="logo"
+      <header class="header">
+        <a href="#portfolio" class="logo"
           ><img src="./img/photo.png" alt="Prince Nwuke" class="photo-img"
         /></a>
-        <nav>
+        <nav class="navBar">
           <div class="hamburger">
             <img
               src="./img/horizontal-line-1.png"
@@ -47,72 +47,98 @@
             <li class="nav-list">
               <a href="#about-section" class="nav-link">About</a>
             </li>
+
             <li class="nav-list">
-              <a href="#form_section" class="nav-link">Contact</a>
+              <a href="#skills-section" class="nav-link">Skills</a>
+            </li>
+
+            <li class="nav-list">
+              <a href="#volunteer-section" class="nav-link">Volunteer works</a>
+            </li>
+
+            <li class="nav-list">
+              <a href="#contact-section" class="nav-link">Get my Resume</a>
             </li>
           </ul>
 
           <ul class="desktop-nav">
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#works-section">Portfolio</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#volunteer-section">Volunteer works</a></li>
             <li>
-              <a href="#"><img src="./icons/envelope.png" alt="message" /></a>
+              <a
+                href="https://docs.google.com/document/d/1ug6v4Ic3UIa0u1Jm59nE9UjdFiIQGd8S4awjULCTSig/edit"
+                target="_blank"
+                >Get My Resume</a
+              >
             </li>
           </ul>
         </nav>
       </header>
+
       <main class="main-container">
         <section id="hero-section">
-          <div class="hero-section-greet">
-            <div class="typewriter">
-              <h1>Hello, I’m Prince.</h1>
-              <h2>A Fullstack developer</h2>
-            </div>
-
-            <div class="hero-section-paragraph">
-              <p>
-                I can help you build a product , feature or website. Look
-                through some of my work and experience!
-              </p>
-              <p>
-                I also voluteer as a community manager and part-time Teaching
-                Assistant at LHI software development school, where I teach
-                HTML, CSS, JavaScript and React!
-              </p>
-              <p>I am open to new opportunities!</p>
-            </div>
+          <div class="typewriter-mobile">
+            <h1>Hello, I’m Prince.</h1>
+            <h2 class="h2-a">A</h2>
+            <h2 class="h2-b">Full-stack</h2>
+            <h2 class="h2-c">Developer</h2>
           </div>
-          <ul class="hero-section-icons">
-            <li>
-              <a href="https://github.com/prius2055" target="_blank"
-                ><img src="./icons/github.png" alt="github icon"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/prince-nwuke-69142a227/"
-                target="_blank"
-                ><img src="./icons/linkedin.png" alt="linkedin icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#" target="_blank"
-                ><img src="./icons/angel-list.png" alt="angel list icon"
-              /></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/Prius2055" target="_blank"
-                ><img src="./icons/twitter.png" alt="twitter icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#" target="_blank"
-                ><img src="./icons/medium.png" alt="medium icon"
-              /></a>
-            </li>
-          </ul>
+
+          <div class="typewriter">
+            <h1>Hello, I’m Prince.</h1>
+            <h2>A Full-stack Developer</h2>
+          </div>
         </section>
+
+        <section id="about-section">
+          <h1>About me</h1>
+          <div class="about-paragraphs">
+            <p>
+              I'm a Full-stack Developer with proven experience in building
+              solutions, a passion for mentoring junior developers, and
+              excellent remote work experience
+            </p>
+
+            <p>I can help you build a product , feature or website.</p>
+            <p>
+              I also voluteer as a community manager and part-time Teaching
+              Assistant at LHI software development school, where I teach HTML,
+              CSS, JavaScript and React!
+            </p>
+          </div>
+        </section>
+
+        <ul class="hero-section-icons">
+          <li>
+            <a href="https://github.com/prius2055" target="_blank"
+              ><img src="./icons/github.png" alt="github icon"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/prince-nwuke-69142a227/"
+              target="_blank"
+              ><img src="./icons/linkedin.png" alt="linkedin icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@LHISoftwaredev" target="_blank"
+              ><img src="./icons/angel-list.png" alt="angel list icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Prius2055" target="_blank"
+              ><img src="./icons/twitter.png" alt="twitter icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://medium.com/@prius2055" target="_blank"
+              ><img src="./icons/medium.png" alt="medium icon"
+            /></a>
+          </li>
+        </ul>
 
         <section id="works-section">
           <div class="works-section-header">
@@ -121,127 +147,138 @@
           <div class="work-cards"></div>
         </section>
 
-        <section id="about-section">
-          <div class="about-section-header">
-            <h1>About me</h1>
-            <p>
-              Hello I’m a software developer! I can help you build a product ,
-              feature or website Look through some of my work and experience! If
-              you like what you see and have a project you need coded, don’t
-              hestiate to contact me.
-            </p>
-            <button class="btn-orange btn-about">Get My Resume</button>
+        <section id="skills-section">
+          <div class="skills-section-header">
+            <h1>My Skills</h1>
           </div>
+          <p>
+            Over the years, I have acquired a good number of technical and soft
+            skills. I have highligted some of my skills below
+          </p>
+          <div class="skills-group">
+            <div class="tech-skills">
+              <h2>Technical skills</h2>
+              <div class="skills-list">
+                <div class="skills-card">
+                  <div class="skills-card-header">
+                    <img src="./img/Rec.png" alt="Rectangle icon" />
+                    <h3>Languages</h3>
+                  </div>
+                  <ul class="skills-card-item">
+                    <li>Javascript</li>
+                    <li>Ruby</li>
+                    <li>Html</li>
+                    <li>Css</li>
+                  </ul>
+                </div>
 
-          <div class="about-horizontal"></div>
+                <div class="skills-card">
+                  <div class="skills-card-header">
+                    <img src="./img/Rec.png" alt="Rectangle icon" />
+                    <h3>Frameworks</h3>
+                  </div>
+                  <ul class="skills-card-item">
+                    <li>React</li>
+                    <li>Ruby on Rails</li>
+                    <li>RSPec</li>
+                    <li>CapyBara</li>
+                    <li>Selenium</li>
+                    <li>Bootstrap</li>
+                    <li>TailwindCSS</li>
+                  </ul>
+                </div>
 
-          <div class="about-section-skills">
-            <ul class="skills-card">
-              <li class="skills-header">
-                <img src="./img/hex.png" alt="hexagon icon" />
-                <h2>Languages</h2>
-              </li>
-              <li>Javascript</li>
-              <li>Ruby</li>
-              <li>Html</li>
-              <li>Css</li>
-            </ul>
+                <div class="skills-card">
+                  <div class="skills-card-header">
+                    <img src="./img/Rec.png" alt="Rectangle icon" />
+                    <h3>Developer tools and methodology</h3>
+                  </div>
+                  <ul class="skills-card-item">
+                    <li>Github</li>
+                    <li>ES6 Modules</li>
+                    <li>Webpack</li>
+                    <li>Gitflow</li>
+                    <li>Linting</li>
+                    <li>Jest test</li>
+                    <li>Terminal</li>
+                    <li>Fixing bugs</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-            <ul class="skills-card">
-              <li class="skills-header">
-                <img src="./img/Rec.png" alt="Rectangle icon" />
-                <h2>Frameworks</h2>
-              </li>
-              <li>React</li>
-              <li>Ruby on Rails</li>
-              <li>RSPec</li>
-              <li>CapyBara</li>
-              <li>Selenium</li>
-              <li>Bootstrap</li>
-            </ul>
-
-            <ul class="skills-card">
-              <li class="skills-header">
-                <img src="./img/circle.png" alt="circular icon" />
-                <h2>Skills</h2>
-              </li>
-              <li>Github</li>
-              <li>ES6 Modules</li>
-              <li>Webpack</li>
-              <li>Gitflow</li>
-              <li>Linting</li>
-              <li>Jest test</li>
-              <li>Terminal</li>
-            </ul>
+            <div class="tech-skills">
+              <h2>Soft skills</h2>
+              <div class="skills-card">
+                <ul class="soft-skills-card-item">
+                  <li>Effective communication</li>
+                  <li>Problem solving</li>
+                  <li>Innovative</li>
+                  <li>Teaching and mentoring</li>
+                  <li>Team work</li>
+                  <li>Remote work</li>
+                  <li>Working with diverse cultures</li>
+                  <li>Native English speaker</li>
+                  <li>Fluent in Russian language</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section id="form_section">
-          <div class="form">
-            <p>
-              I'm always interested in hearing about new projects, so if you'd
-              like to chat please get in touch.
-            </p>
-            <form
-              id="form"
-              class="form_element"
-              action="https://formspree.io/f/xjvdwjpe"
-              method="post"
-            >
-              <input
-                id="fuName"
-                type="text"
-                placeholder="Full Name"
-                name="full name"
-                maxlength="30"
-                class="input-fullname"
-              />
-
-              <input
-                id="fName"
-                type="text"
-                placeholder="First Name"
-                name="first name"
-                maxlength="30"
-                class="input-name"
-              />
-
-              <input
-                id="lName"
-                type="text"
-                placeholder="Last Name"
-                name="last name"
-                maxlength="30"
-                class="input-name"
-              />
-
-              <input
-                type="email"
-                placeholder="Email address"
-                required
-                name="email"
-                class="input-email"
-                title="Your email address should be lower case"
-              />
-
-              <textarea
-                id="message"
-                name="message"
-                required
-                placeholder="Enter text here"
-                maxlength="500"
-                cols="30"
-                rows="5"
-              ></textarea>
-              <div class="btn-form-container">
-                <button class="btn-form" type="submit">Get in touch</button>
-                <span class="error" aria-live="polite">Ih</span>
-              </div>
-            </form>
+        <section id="volunteer-section">
+          <div class="volunteer-header">
+            <h1>My Volunteer Videos</h1>
           </div>
+          <p>
+            Few videos from my voluteer work, where I mentor junior developers
+            on HTML, CSS, JavaScript, React
+          </p>
 
-          <div class="line"></div>
-          <ul class="hero-section-icons icon-desktop" id="bottom-social">
+          <div class="volunteer-detail-group">
+            <div class="volunteer-detail">
+              <a
+                href="https://www.youtube.com/watch?v=tctsHU7kjik&t=111s"
+                target="_blank"
+                ><img src="./img//html-video.PNG" />
+                <p>HTML and CSS basics</p></a
+              >
+            </div>
+
+            <div class="volunteer-detail">
+              <a
+                href="https://www.youtube.com/watch?v=yBUnRdRO9qQ&t=16s"
+                target="_blank"
+                ><img src="./img//css-video.PNG" />
+                <p>CSS - Flexbox</p></a
+              >
+            </div>
+
+            <div class="volunteer-detail">
+              <a
+                href="https://www.youtube.com/watch?v=tctsHU7kjik&t=111s"
+                target="_blank"
+                ><img src="./img//js-video.PNG" />
+                <p>JavaScript basics</p></a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section id="contact-section">
+          <button class="contact-btn">
+            <a
+              href="https://docs.google.com/document/d/1ug6v4Ic3UIa0u1Jm59nE9UjdFiIQGd8S4awjULCTSig/edit"
+              target="_blank"
+              >Get My Resume</a
+            >
+          </button>
+          <p>
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </p>
+
+          <ul class="contact-icons">
             <li>
               <a href="https://github.com/prius2055" target="_blank"
                 ><img src="./icons/dark-github-icon.png" alt="github icon"
@@ -255,24 +292,27 @@
               /></a>
             </li>
             <li>
-              <a href="#" target="_blank"
-                ><img src="./icons/dark-angel-icon.png" alt="angel list icon"
+              <a href="https://www.youtube.com/@LHISoftwaredev" target="_blank"
+                ><img src="./icons/youtube.png" alt="youtube icon"
               /></a>
             </li>
             <li>
-              <a href="#" target="_blank"
+              <a href="https://twitter.com/Prius2055" target="_blank"
                 ><img src="./icons/dark-twitter-icon.png" alt="twitter icon"
               /></a>
             </li>
             <li>
-              <a href="#"
+              <a href="https://medium.com/@prius2055" target="_blank"
                 ><img src="./icons/dark-medium-icon.png" alt="medium icon"
               /></a>
             </li>
           </ul>
         </section>
+
+        <div class="copyright">
+          <p>&copy; Designed & built with love by Prince Nwuke 2023</p>
+        </div>
       </main>
-      <hr class="bottom_line" />
 
       <!-- Mobile popup goes here -->
       <div class="modal-container"></div>
