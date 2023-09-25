@@ -139,6 +139,9 @@ body {
 }
 
 #hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #222;
   padding: 1% 10%;
   height: 100vh;
@@ -175,8 +178,7 @@ body {
   font-size: 40px;
   margin-top: 20px;
   border-right: 0.08em solid transparent;
-  animation:
-    typing-h2 3.5s steps(30, end) 1s 1 normal both,
+  animation: typing-h2 3.5s steps(30, end) 1s 1 normal both,
     blink-caret-h2 0.5s steps(30, end) infinite;
 }
 
@@ -230,14 +232,31 @@ body {
 }
 
 .hero-section-paragraph {
-  box-shadow:
-    rgba(0, 0, 0, 0.3) 0 19px 38px 0,
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px 0,
     rgba(0, 0, 0, 0.22) 0 15px 12px 0;
   border-radius: 10px;
   padding: 5%;
   font-style: italic;
   line-height: 30px;
-  margin-top: 10%;
+  animation: slideIn 2.5s steps(30, end) 1s 1 normal both;
+  animation-delay: 11s;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .hero-section-icons {
@@ -430,8 +449,7 @@ body {
 .tech-skills {
   display: flex;
   flex-direction: column;
-  box-shadow:
-    rgba(0, 0, 0, 0.3) 0 19px 38px 0,
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px 0,
     rgba(0, 0, 0, 0.22) 0 15px 12px 0;
   border-radius: 10px;
   padding: 2% 4%;
@@ -727,6 +745,10 @@ body {
   .typewriter-mobile h2 {
     font-size: 68px;
   }
+
+  .hero-section-paragraph {
+    font-size: 20px;
+  }
 }
 
 /* DESKTOP VIEW */
@@ -817,8 +839,7 @@ body {
     font-weight: 700;
     overflow: hidden;
     border-right: 0.08em solid transparent;
-    animation:
-      typing-h2-desk 3.5s steps(30, end) 1s 1 normal both,
+    animation: typing-h2-desk 3.5s steps(30, end) 1s 1 normal both,
       blink-caret-h2-desk 0.5s steps(30, end) infinite;
     -webkit-animation-delay: 4.5s;
     animation-delay: 4.5s;
@@ -858,6 +879,10 @@ body {
     }
   }
 
+  .hero-section-paragraph {
+    animation-delay: 7.5s;
+  }
+
   .hero-section-icons {
     display: flex;
     flex-direction: column;
@@ -891,7 +916,7 @@ body {
   .about-paragraphs {
     margin-bottom: 30px;
     opacity: 0;
-    transform: translate3d(0, -50px, 0);
+    transform: translate3d(0, 50px, 0);
     transition: 1s all ease-in-out;
   }
 
@@ -920,9 +945,7 @@ body {
   }
 
   .work-card img {
-    box-shadow:
-      rgba(0, 0, 0, 0.3) 0 0 5px 0,
-      rgba(0, 0, 0, 0.22) 3px 3px 5px 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px 0, rgba(0, 0, 0, 0.22) 3px 3px 5px 0;
     width: 50%;
     height: 100%;
     cursor: pointer;
@@ -1135,9 +1158,7 @@ body {
   .btn-modal img {
     width: 12%;
     height: 12%;
-    box-shadow:
-      rgba(0, 0, 0, 0.3) 0 0 5px 0,
-      rgba(0, 0, 0, 0.22) 3px 3px 5px 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 5px 0, rgba(0, 0, 0, 0.22) 3px 3px 5px 0;
   }
 
   .modal-list {
