@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     name: 'spaceX',
     description:
-      'A mission to space app that utilizes the space API, allowing users to book reservations for a journey to  space.',
+      'An innovative and captivating Mission to Space application leveraging the rich capabilities of the space API. This cutting-edge app empowers users to embark on an extraordinary journey to outer space by facilitating seamless reservations and bookings for an experience that transcends our earthly bounds. With the mission to space app, the cosmos is now within reach.',
     technology: ['React', 'Redux', 'API', 'CSS', 'Axios'],
     image: './img/spaceX.png',
     liveVersion: './img/Icon-2.png',
@@ -16,7 +16,7 @@ const projects = [
     id: 2,
     name: 'BudgIT',
     description:
-      'An interactive budget app that helps individuals plan and track their expenses and expenditures',
+      'Introducing an engaging and user-friendly Interactive Budgeting application, designed to empower individuals with effective financial planning and expense tracking tools. This intuitive app goes beyond mere budgeting; it serves as a comprehensive financial companion, assisting users in meticulous expense planning and tracking, providing real-time insights into their financial health, and ultimately helping them achieve their financial goals with confidence and ease',
     technology: ['CSS', 'JavaScript', 'Ruby', 'Shell', 'Rails'],
     image: './img/BudgIT.png',
     liveVersion: './img/Icon-2.png',
@@ -29,7 +29,7 @@ const projects = [
     id: 3,
     name: 'CodeHeros: Learn Software development',
     description:
-      'A software training school that offers free software development training and provides an excellent opportunity for individuals who want to learn programming skills without incurring any financial burden.',
+      'Welcome to our distinguished Software Training School, a remarkable institution committed to the noble cause of democratizing software development education. Our mission is to offer tuition-free, world-class training in the art of software development, presenting a golden opportunity for enthusiastic individuals to embark on a transformative journey into the realm of programming without any financial constraints. Here, knowledge is freely shared, and barriers to learning are dismantled, empowering aspiring developers to acquire invaluable coding skills and chart their own path to a prosperous future in the tech industry, unhindered by financial burdens.',
     technology: ['html', 'Bootstrap', 'JavaScript', 'Github'],
     image: './img/codeheros.png',
     liveVersion: './img/Icon-2.png',
@@ -42,7 +42,7 @@ const projects = [
     id: 4,
     name: 'Leaderboard',
     description:
-      'A leaderboard that allows users POST and GET scores from a RESTAPI. It can be used to display latest scores update in sporting events',
+      'Introducing a dynamic Leaderboard Platform, meticulously crafted to offer users the capability to seamlessly POST and GET scores via a REST API. This versatile leaderboard serves as the quintessential solution for tracking and displaying real-time score updates in sporting events. With its user-friendly interface and robust API integration, users can effortlessly contribute their scores and access the latest updates, creating an engaging and interactive experience for sports enthusiasts worldwide.',
     technology: ['JavaScript', 'Webpack', 'Gitflow', 'RESTAPI'],
     image: './img/leaderboard.png',
     liveVersion: './img/Icon-2.png',
@@ -55,7 +55,7 @@ const projects = [
     id: 5,
     name: 'Currency exchanger',
     description:
-      'This is a currency exchage app. Users can check exchange rate of most world currencies against a base currency ',
+      'Behold our cutting-edge Currency Exchange Application, a feature-rich platform designed to empower users with the ability to effortlessly access and compare exchange rates of a wide array of global currencies against a chosen base currency. This comprehensive app provides users with real-time, up-to-date information, ensuring they are well-informed about the dynamic world of currency exchange. Whether for international travelers, financial professionals, or anyone keen on monitoring currency fluctuations, this app offers a user-friendly and indispensable tool to stay in control of their financial decisions. ',
     technology: ['React', 'Redux', 'API', 'github'],
     image: './img/currency-exchange.png',
     liveVersion: './img/Icon-2.png',
