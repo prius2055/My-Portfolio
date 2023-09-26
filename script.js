@@ -5,9 +5,9 @@ const projects = [
     description:
       'An innovative and captivating Mission to Space application leveraging the rich capabilities of the space API. This cutting-edge app empowers users to embark on an extraordinary journey to outer space by facilitating seamless reservations and bookings for an experience that transcends our earthly bounds. With the mission to space app, the cosmos is now within reach.',
     technology: ['React', 'Redux', 'API', 'CSS', 'Axios'],
-    image: 'img/spaceX.png',
+    image: 'img/spaceX.PNG',
     liveVersion: 'img/Icon-2.png',
-    source: 'img/github.PNG',
+    source: 'img/github.png',
     liveDemo: 'https://spacex-mv.netlify.app/',
     sourceCode: 'https://github.com/abeltsew/spacex',
   },
