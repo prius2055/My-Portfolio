@@ -45,7 +45,7 @@ const projects = [
       'Introducing an engaging and user-friendly Interactive Budgeting application, designed to empower individuals with effective financial planning and expense tracking tools. This intuitive app goes beyond mere budgeting; it serves as a comprehensive financial companion, assisting users in meticulous expense planning and tracking, providing real-time insights into their financial health, and ultimately helping them achieve their financial goals with confidence and ease',
     technology: ['CSS', 'JavaScript', 'Ruby', 'Shell', 'Rails'],
     image: 'img/BudgIT-2.png',
-    liveVersion: './img/Icon-2.png',
+    liveVersion: 'img/Icon-2.png',
     source: 'img/github.png',
     liveDemo: 'https://budgit.onrender.com/',
     sourceCode: 'https://github.com/prius2055/rails-budget-app',
@@ -169,7 +169,7 @@ projectButtons.forEach((btn, j) => {
         const modal = ` <div class='modal'>
         <div class='modal-heading'>
           <h2>${project.name}</h2>
-          <img src='./img/Icon.png' alt='cancel image' class='modal-close' />
+          <img src='./img/xmark.svg' alt='cancel image' class='modal-close' />
         </div>
         <ul class='modal-list'>
           <li>${project.technology[0]}</li>
