@@ -139,16 +139,26 @@ body {
 }
 
 #hero-section {
-  display: flex;
-  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('./img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-content: center;
   background-color: #222;
   padding: 1% 10%;
-  height: 100vh;
+  height: 80vh;
   margin-bottom: 0;
   margin-top: 50px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+.hero-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
 }
 
 .typewriter {
@@ -167,7 +177,7 @@ body {
   font-family: 'Crete Round', sans-serif;
   font-size: 32px;
   border-right: 0.1em solid transparent;
-  animation: typing-h1 3.5s steps(30, end) 1s 1 normal both;
+  animation: typing-h1 1.5s steps(30, end) 1s 1 normal both;
 }
 
 .typewriter-mobile h2 {
@@ -178,23 +188,23 @@ body {
   font-size: 40px;
   margin-top: 20px;
   border-right: 0.08em solid transparent;
-  animation: typing-h2 3.5s steps(30, end) 1s 1 normal both,
+  animation: typing-h2 1.5s steps(30, end) 1s 1 normal both,
     blink-caret-h2 0.5s steps(30, end) infinite;
 }
 
 .typewriter-mobile .h2-a {
   -webkit-animation-delay: 4.5s;
-  animation-delay: 4.5s;
+  animation-delay: 2.5s;
 }
 
 .typewriter-mobile .h2-b {
   -webkit-animation-delay: 4.5s;
-  animation-delay: 5.5s;
+  animation-delay: 3.2s;
 }
 
 .typewriter-mobile .h2-c {
   -webkit-animation-delay: 4.5s;
-  animation-delay: 8.5s;
+  animation-delay: 4.7s;
 }
 
 /* The typing effect */
@@ -232,14 +242,27 @@ body {
 }
 
 .hero-section-paragraph {
-  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px 0,
-    rgba(0, 0, 0, 0.22) 0 15px 12px 0;
   border-radius: 10px;
-  padding: 5%;
+  margin: 5%;
   font-style: italic;
   line-height: 30px;
-  animation: slideIn 2.5s steps(30, end) 1s 1 normal both;
-  animation-delay: 11s;
+  animation: slideIn 1.5s steps(30, end) 1s 1 normal both;
+  animation-delay: 5s;
+}
+
+.btn-cta {
+  padding: 1.5% 4%;
+  margin-left: 5%;
+  background-color: #ff6b00;
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  align-self: self-start;
+  font-weight: 700;
+  animation: slideIn 1.5s steps(30, end) 1s 1 normal both;
+  animation-delay: 6.5s;
 }
 
 @keyframes slideIn {
@@ -268,17 +291,22 @@ body {
 }
 
 .hero-image {
-  position: absolute;
+  /* position: absolute;
   right: 0;
   top: 317px;
-  bottom: 0.1%;
+  bottom: 0.1%; */
 }
 
 /* ABOUT SECTION */
 #about-section {
   padding: 0 5%;
-  margin-top: 80px;
+  margin-top: 40px;
   color: #595959;
+}
+
+#about-section img {
+  width: 300px;
+  height: 300px;
 }
 
 .about-paragraphs {
@@ -548,20 +576,55 @@ body {
   color: #595959;
 }
 
+.contact-action {
+  width: 100%;
+}
+
+.contact-icon-group {
+  margin-bottom: 5%;
+}
+
+.contact-me-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.location-detail {
+  margin-left: 2%;
+  margin-bottom: 0;
+}
+
+/* .contact-action img {
+  width: 200px;
+} */
+
+.contact-action-detail {
+  margin-bottom: 3%;
+}
+
+.input-name,
+.input-email,
+.input-message {
+  width: 100%;
+  margin-bottom: 3%;
+  padding: 3%;
+}
+
 .contact-btn {
   margin-bottom: 20px;
-  width: 50%;
-  padding: 4%;
+  padding: 1.5% 3%;
   background-color: #ff6b00;
   border: none;
   cursor: pointer;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
 }
 
 .contact-btn a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
-  font-weight: 400;
 }
 
 .contact-icons {
@@ -807,8 +870,8 @@ body {
     line-height: 20px;
   }
 
-  #hero-section {
-    justify-content: center;
+  .hero-intro {
+    width: 100%;
   }
 
   .typewriter-mobile {
@@ -881,6 +944,17 @@ body {
 
   .hero-section-paragraph {
     animation-delay: 7.5s;
+    margin-bottom: 5%;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: left;
+    font-size: 26px;
+  }
+
+  .btn-cta {
+    animation-delay: 8.5s;
+    margin-left: 0;
+    margin-top: 0;
   }
 
   .hero-section-icons {
@@ -1166,7 +1240,6 @@ body {
   .btn-modal img {
     width: 12%;
     height: 12%;
-    
   }
 
   .modal-list {
@@ -1204,10 +1277,23 @@ body {
   /* CONTACT SECTION */
 
   #contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 10%;
+  }
+
+  #contact-section form {
+    width: 70%;
+  }
+
+  .contact-icons {
     display: none;
   }
 
   .copyright {
+    background-color: #222;
+    color: white;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
     border: none;
@@ -1217,7 +1303,39 @@ body {
 
 /* DESKTOP 2 */
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 960px) {
+  #hero-section {
+    align-items: flex-start;
+  }
+
+  .typewriter h1 {
+    font-size: 68px;
+  }
+
+  .typewriter h2 {
+    font-size: 72px;
+  }
+
+  .contact-action-detail {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  #contact-section form {
+    width: 80%;
+  }
+}
+
+/* DESKTOP 3 */
+
+@media screen and (min-width: 1200px) {
+  .typewriter h1 {
+    font-size: 88px;
+  }
+
+  .typewriter h2 {
+    font-size: 98px;
+  }
   .volunteer-detail img {
     width: 450px;
     height: 300px;
