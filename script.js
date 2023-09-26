@@ -7,7 +7,7 @@ const projects = [
     technology: ['React', 'Redux', 'API', 'CSS', 'Axios'],
     image: 'img/spaceX.png',
     liveVersion: 'img/Icon-2.png',
-    source: 'img/github.png',
+    source: 'img/github.PNG',
     liveDemo: 'https://spacex-mv.netlify.app/',
     sourceCode: 'https://github.com/abeltsew/spacex',
   },
@@ -18,7 +18,7 @@ const projects = [
     description:
       'Welcome to our distinguished Software Training School, a remarkable institution committed to the noble cause of democratizing software development education. Our mission is to offer tuition-free, world-class training in the art of software development, presenting a golden opportunity for enthusiastic individuals to embark on a transformative journey into the realm of programming without any financial constraints. Here, knowledge is freely shared, and barriers to learning are dismantled, empowering aspiring developers to acquire invaluable coding skills and chart their own path to a prosperous future in the tech industry, unhindered by financial burdens.',
     technology: ['html', 'Bootstrap', 'JavaScript', 'Github'],
-    image: 'img/codeheros.png',
+    image: 'img/codeheros.PNG',
     liveVersion: 'img/Icon-2.png',
     source: 'img/github.png',
     liveDemo: 'https://prius2055.github.io/learn-web-development/',
@@ -31,7 +31,7 @@ const projects = [
     description:
       'Behold our cutting-edge Currency Exchange Application, a feature-rich platform designed to empower users with the ability to effortlessly access and compare exchange rates of a wide array of global currencies against a chosen base currency. This comprehensive app provides users with real-time, up-to-date information, ensuring they are well-informed about the dynamic world of currency exchange. Whether for international travelers, financial professionals, or anyone keen on monitoring currency fluctuations, this app offers a user-friendly and indispensable tool to stay in control of their financial decisions. ',
     technology: ['React', 'Redux', 'API', 'github'],
-    image: 'img/currency-exchange.png',
+    image: 'img/currency-exchange.PNG',
     liveVersion: 'img/Icon-2.png',
     source: 'img/github.png',
     liveDemo: 'https://currency-exchange-app.onrender.com/',
@@ -44,7 +44,7 @@ const projects = [
     description:
       'Introducing an engaging and user-friendly Interactive Budgeting application, designed to empower individuals with effective financial planning and expense tracking tools. This intuitive app goes beyond mere budgeting; it serves as a comprehensive financial companion, assisting users in meticulous expense planning and tracking, providing real-time insights into their financial health, and ultimately helping them achieve their financial goals with confidence and ease',
     technology: ['CSS', 'JavaScript', 'Ruby', 'Shell', 'Rails'],
-    image: 'img/BudgIT-2.png',
+    image: 'img/BudgIT-2.PNG',
     liveVersion: 'img/Icon-2.png',
     source: 'img/github.png',
     liveDemo: 'https://budgit.onrender.com/',
