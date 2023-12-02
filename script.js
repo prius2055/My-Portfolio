@@ -1,7 +1,7 @@
 const projects = [
   {
     id: 1,
-    name: 'propInspect',
+    name: 'propInspect (Prop-Tech)',
     description:
       ' Seamlessly book property inspections with this user-friendly prop-tech app, built with modern technologies; Rails, React, Redux, Tailwind,axios, API and Postgresql for database management. Pick a suitable date, select your preferred time, and schedule hassle-free property viewings. Your journey to finding the perfect home starts here, making property exploration effortless!',
     technology: ['React-Redux', 'Ruby-on-Rails', 'Postgresql', 'TailwindCSS'],
