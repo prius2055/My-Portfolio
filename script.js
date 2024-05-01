@@ -69,7 +69,7 @@ const projects = [
     name: 'Website for a consultancy firm',
     description:
       'Explore RAEMCOD GLOBAL GROUP website. A company exceling in real estate, media production, ICT, and strategic investment. Navigate seamlessly through their subsidiary companies and explore the array of services.',
-    technology: ['JavaScript', 'Gitflow', 'CSS'],
+    technology: ['JavaScript', 'Gitflow', 'CSS', 'HTML'],
     image: 'img/leaderboard-3.PNG',
     liveVersion: 'img/Icon-2.png',
     source: 'img/github.png',
