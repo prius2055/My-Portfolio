@@ -66,15 +66,15 @@ const projects = [
 
   {
     id: 6,
-    name: 'Leaderboard',
+    name: 'Website for a consultancy firm',
     description:
-      'Introducing a dynamic Leaderboard Platform, meticulously crafted to offer users the capability to seamlessly POST and GET scores via a REST API. This versatile leaderboard serves as the quintessential solution for tracking and displaying real-time score updates in sporting events. With its user-friendly interface and robust API integration, users can effortlessly contribute their scores and access the latest updates, creating an engaging and interactive experience for sports enthusiasts worldwide.',
-    technology: ['JavaScript', 'Webpack', 'Gitflow', 'RESTAPI'],
+      'Explore RAEMCOD GLOBAL GROUP website. A company exceling in real estate, media production, ICT, and strategic investment. Navigate seamlessly through their subsidiary companies and explore the array of services.',
+    technology: ['JavaScript', 'Gitflow', 'CSS'],
     image: 'img/leaderboard-3.PNG',
     liveVersion: 'img/Icon-2.png',
     source: 'img/github.png',
-    liveDemo: 'https://prius2055.github.io/leaderboard-project/',
-    sourceCode: 'https://github.com/prius2055/leaderboard-project',
+    liveDemo: 'https://www.raemcodgroup.com/',
+    sourceCode: 'https://github.com/prius2055/raemcod-group',
   },
 ];
 
@@ -95,7 +95,7 @@ projects.forEach((project, i) => {
             <li>${project.technology[2]}</li>
             <li>${project.technology[3]}</li>
           </ul>
-  
+
 <button class='btn-orange'>See project</button>
 </div>
           `;
