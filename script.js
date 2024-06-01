@@ -1,5 +1,18 @@
 const projects = [
   {
+    id: 3,
+    name: 'Gistam - Your Ultimate Micro-Blogging Experience!',
+    description:
+      'Dive into Gistam, the vibrant micro-blogging platform where your voice matters. Whether you are sharing thoughts, engaging in lively discussions, or showcasing your latest photos, Gistam has you covered. Created with React, Redux, Rails for backend, postgreSql, with images hosted using Amazon s3, and hosted using netlify and render, Gistam enables you to create and share posts effortlessly, comment on posts and interact with other users, Like posts to show your support, easily delete your posts and comments whenever you choose, upload images to enhance your posts. Experience the power of community and seamless interaction on Gistam. Join us today and start sharing your story!',
+    technology: ['React & Redux', 'Rails', 'Postgresl & AmazonS3', 'Git, Render & Netlify'],
+    image: 'img/gistam.PNG',
+    liveVersion: 'img/Icon-2.png',
+    source: 'img/github.png',
+    liveDemo: 'https://gistam.netlify.app/',
+    sourceCode: 'https://github.com/prius2055/gistam',
+  },
+
+  {
     id: 1,
     name: 'propInspect (Prop-Tech)',
     description:
@@ -23,19 +36,6 @@ const projects = [
     source: 'img/github.png',
     liveDemo: 'https://spacex-mv.netlify.app/',
     sourceCode: 'https://github.com/abeltsew/spacex',
-  },
-
-  {
-    id: 3,
-    name: 'CodeHeros: Learn Software development',
-    description:
-      'Welcome to our distinguished Software Training School, a remarkable institution committed to the noble cause of democratizing software development education. Our mission is to offer tuition-free, world-class training in the art of software development, presenting a golden opportunity for enthusiastic individuals to embark on a transformative journey into the realm of programming without any financial constraints. Here, knowledge is freely shared, and barriers to learning are dismantled, empowering aspiring developers to acquire invaluable coding skills and chart their own path to a prosperous future in the tech industry, unhindered by financial burdens.',
-    technology: ['html', 'Bootstrap', 'JavaScript', 'Github'],
-    image: 'img/codeheros.PNG',
-    liveVersion: 'img/Icon-2.png',
-    source: 'img/github.png',
-    liveDemo: 'https://prius2055.github.io/learn-web-development/',
-    sourceCode: 'https://github.com/prius2055/learn-web-development',
   },
 
   {
